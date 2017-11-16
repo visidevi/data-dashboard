@@ -1,3 +1,20 @@
 /*
  * Hola esto es un comentario random
  */
+ *{
+   margin: 0;
+   overflow: hidden;
+ }
+header{
+  width: 100%;
+  height: 4em;
+  box-sizing: content-box;
+}
+header img{
+  margin-left: 40%;
+}
+header i{
+  float: right;
+  margin-top: 1%;
+  margin-right: 3%;
+}
