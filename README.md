@@ -23,3 +23,7 @@
 
 > Nota: No olvides que es una buena práctica describir tu proyecto en este
 > archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+1 Creacion  del header
+Primera parte jessica
+segunda parte Visaka
+
