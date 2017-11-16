@@ -61,3 +61,33 @@ sedes li:hover{
 .show{
 	display: block;
 }
+.hamburger{
+	background-color:#000;
+	display: inline-block;
+	position: absolute;
+	top:0px;
+	right: 0;
+	color:#fff;
+	overflow: hidden;
+	height: 1000px;
+	
+}
+.hamburger ul{
+
+	display: inline-block;
+	margin:1em;
+	margin-right: 0;
+	text-align: center;
+	
+}
+
+.hamburger li{
+	padding: 3em;
+	text-transform:uppercase;
+}
+.hamburger .fa {
+	cursor: pointer;
+	color: white;
+	float: right;
+	margin: 10px 5px 5px ;
+}
