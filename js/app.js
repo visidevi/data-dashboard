@@ -28,14 +28,20 @@ menu.addEventListener('click', function() {
 
 	 menuhamburger.appendChild(buttonclose);
 
-	var img = document.createElement
+	var img = document.createElement('img');
+	img.setAttribute('src',"assets/images/profilepic.jpg")
+	img.setAttribute('class', 'img')
 
 
+
+	ul.appendChild(img);
+	
  	ul.appendChild(user);
  	ul.appendChild(addstudent);
  	ul.appendChild(removestudent);
  	ul.appendChild(addsprint);
 
+    
  	user.textContent = 'Valentina Smith';
  	addstudent.textContent = 'Add student';
  	removestudent.textContent = 'Remove student';

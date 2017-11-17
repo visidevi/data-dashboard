@@ -93,3 +93,9 @@ header section i{
 	float: right;
 	margin: 10px 5px 5px ;
 }
+img{
+	width: 10%;
+	border:2px solid white;
+	border-radius: 2%;
+	margin-bottom: 0;
+}
