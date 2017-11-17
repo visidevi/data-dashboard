@@ -8,11 +8,10 @@ var menu= document.getElementById('subMenu');
 var list = document.getElementById('hide');
 //llamamos las clases de los items
 menu.addEventListener('click', function() {
-	list.toggle('show')
+	list.classList.toggle('show')
 });
 
-};
- function hamburger(){
+ function hamburger (){
  	var menuhamburger=document.createElement('div');
  	menuhamburger.setAttribute('class', 'hamburger');
 
