@@ -36,7 +36,7 @@ header section i{
 }
 .sedes .itemList .sede{
 	display: block;
-	padding: 1em 1em;
+	padding: 1em;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -44,7 +44,6 @@ header section i{
 	margin-left: 15em;
 	margin-top: -3em;
 	position: absolute;
-	background-color: #e1e1e1;
 }
 /*
 .sedes li:hover{

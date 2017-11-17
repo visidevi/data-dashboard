@@ -14,44 +14,28 @@ menu.addEventListener('click', function() {
 	list.classList.toggle('show')
 
 	var lima = document.getElementById('lima');
+	var hL = document.getElementById('hideLima')
 		lima.addEventListener('click', function(e) {
-				var gn = document.getElementById('hideLima')
-					gn.classList.toggle('show')
-			});
-		lima.addEventListener('blur', function(e) {
-				var gn = document.getElementById('hideLima')
-					gn.classList.toggle('show')
-			});
+			hL.classList.toggle('show')
+		});
 
 	var arequipa = document.getElementById('arequipa');
+	var hA = document.getElementById('hideArequipa')
 		arequipa.addEventListener('click', function(e) {
-				var gn = document.getElementById('hideArequipa')
-					gn.classList.toggle('show')
-			});
-		arequipa.addEventListener('blur', function(e) {
-				var gn = document.getElementById('hideArequipa')
-					gn.classList.toggle('show')
-			});
+			hA.classList.toggle('show')
+		});
 
 	var cdmx = document.getElementById('cdmx');
+	var hC = document.getElementById('hideCDMX')
 		cdmx.addEventListener('click', function(e) {
-				var gn = document.getElementById('hideCDMX')
-					gn.classList.toggle('show')
-			});
-		cdmx.addEventListener('blur', function(e) {
-				var gn = document.getElementById('hideCDMX')
-					gn.classList.toggle('show')
-			});
+			hC.classList.toggle('show')
+		});
 
 	var santiago = document.getElementById('santiago');
+	var hS = document.getElementById('hideSantiago')
 	santiago.addEventListener('click', function(e) {
-			var gn = document.getElementById('hideSantiago')
-				gn.classList.toggle('show')
-		});
-	santiago.addEventListener('blur', function(e) {
-			var gn = document.getElementById('hideSantiago')
-				gn.classList.toggle('show')
-		});
+		hS.classList.toggle('show')
+	});
 });
 
  function hamburger (){
