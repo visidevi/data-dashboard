@@ -75,7 +75,7 @@ header section i{
 
 }
 .hamburger ul{
-
+	cursor: pointer;
 	display: inline-block;
 	margin:1em;
 	margin-right: 0;
@@ -94,8 +94,21 @@ header section i{
 	margin: 10px 5px 5px ;
 }
 img{
-	width: 10%;
+	width: 7em;
 	border:2px solid white;
 	border-radius: 2%;
 	margin-bottom: 0;
+	
+}
+
+.profile{
+	text-align: center;
+	margin:1em;
+	margin-top :2em;
+	overflow: hidden;
+}
+/*arreglar esto para que la flecha suba o sacar la flecha */
+.profile span{
+	padding:0;
+	margin: 0;
 }

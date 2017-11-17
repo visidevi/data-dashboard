@@ -15,34 +15,50 @@ menu.addEventListener('click', function() {
  	var menuhamburger=document.createElement('div');
  	menuhamburger.setAttribute('class', 'hamburger');
 
- 	var ul=document.createElement('ul');
- 	var user=document.createElement('li');
- 	var addstudent=document.createElement('li');
- 	var removestudent=document.createElement('li');
- 	var addsprint=document.createElement('li');
-
-
  	 var buttonclose = document.createElement('i')
 	 buttonclose.setAttribute('class','fa fa-times-circle');
 	 buttonclose.setAttribute('aria-hidden',"true");
 
 	 menuhamburger.appendChild(buttonclose);
+ 
+ //FOTO NOMBRE PERFIL
 
-	var img = document.createElement('img');
-	img.setAttribute('src',"assets/images/profilepic.jpg")
-	img.setAttribute('class', 'img')
+	var profile = document.createElement('div')
+	profile.setAttribute('class', 'profile')
 
+	var imgprofile = document.createElement('img');
+	imgprofile.setAttribute('src',"assets/images/profilepic.jpg")
+	imgprofile.setAttribute('class', 'img')
 
+	var profilename = document.createElement('h3');
+	profilename.textContent = 'Valentina Smith';
 
-	ul.appendChild(img);
+	var span = document.createElement('span')
+	var profilearrow = document.createElement('i');
+	 profilearrow.setAttribute('class','fa fa-arrow-circle-down');
+	 profilearrow.setAttribute('aria-hidden',"true");
+
+	 span.appendChild(profilearrow)
+	 //arreglar la flecha 
+
+	profile.appendChild(imgprofile);
+	profile.appendChild(profilename);
+	//profilename.appendChild(span)
+
+	menuhamburger.appendChild(profile)
 	
- 	ul.appendChild(user);
+	var ul=document.createElement('ul');
+ 	var addstudent=document.createElement('li');
+ 	var removestudent=document.createElement('li');
+ 	var addsprint=document.createElement('li');
+
+
  	ul.appendChild(addstudent);
  	ul.appendChild(removestudent);
  	ul.appendChild(addsprint);
 
     
- 	user.textContent = 'Valentina Smith';
+
  	addstudent.textContent = 'Add student';
  	removestudent.textContent = 'Remove student';
  	addsprint.textContent = 'Add Sprint';
