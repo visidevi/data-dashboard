@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 }
 body{
-
 }
 
  header nav{
@@ -35,7 +34,7 @@ header section i{
 	text-transform: uppercase;
 	display: inline-block;
 }
-.sedes .itemList li{
+.sedes .itemList .sede{
 	display: block;
 	padding: 1em 1em;
 	text-decoration: none;
