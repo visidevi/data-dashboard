@@ -9,34 +9,36 @@ var menu= document.getElementById('subMenu');
 var list = document.getElementById('hide');
 
 
-//llamamos las clases de los items
 menu.addEventListener('click', function() {
 	list.classList.toggle('show')
 
 	var lima = document.getElementById('lima');
 	var hL = document.getElementById('hideLima')
-		lima.addEventListener('click', function(e) {
+		lima.addEventListener('change', function(e) {
 			hL.classList.toggle('show')
 		});
 
 	var arequipa = document.getElementById('arequipa');
 	var hA = document.getElementById('hideArequipa')
-		arequipa.addEventListener('click', function(e) {
+		arequipa.addEventListener('change', function(e) {
 			hA.classList.toggle('show')
 		});
 
 	var cdmx = document.getElementById('cdmx');
 	var hC = document.getElementById('hideCDMX')
-		cdmx.addEventListener('click', function(e) {
+		cdmx.addEventListener('change', function(e) {
 			hC.classList.toggle('show')
 		});
 
 	var santiago = document.getElementById('santiago');
 	var hS = document.getElementById('hideSantiago')
-	santiago.addEventListener('click', function(e) {
+	santiago.addEventListener('change', function(e) {
 		hS.classList.toggle('show')
 	});
 });
+
+
+
 
  function hamburger (){
  	var menuhamburger=document.createElement('div');
