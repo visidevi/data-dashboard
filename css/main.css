@@ -31,14 +31,9 @@ header section i{
 }
 .sedes li li a{
 	border:3em;
-	padding: 1em 1em;
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
-}
-.sedes ul ul{
-	position: absolute;
-	top:5em;
 }
 .sedes .itemList li{
 	display: block;
@@ -46,22 +41,25 @@ header section i{
 	text-decoration: none;
 	text-transform: uppercase;
 }
+#hideCDMX, #hideLima, #hideArequipa, #hideSantiago{
+	margin-left: 15em;
+	margin-top: -3em;
+	position: absolute;
+	background-color: #e1e1e1;
+}
 /*
 .sedes li:hover{
 	background-color:rgba(0,0,0,3);
 	cursor: pointer;
 }*/
-.itemList, .hide2{
+.itemList, .hide{
   display: none;
 }
-.show, .show2{
-  display: block;
-}
-.subMenu{
-  cursor: pointer;
-}
 .show{
-	display: block;
+  display: inline-block;
+}
+li{
+  cursor: pointer;
 }
 .hamburger{
 	background-color:#000;
@@ -99,7 +97,7 @@ img{
 	border:2px solid white;
 	border-radius: 2%;
 	margin-bottom: 0;
-	
+
 }
 /*AQui empiezan las clases de la seccion estudiante*/
 
@@ -108,7 +106,7 @@ img{
 	margin:1em;
 	margin-top :2em;
 	overflow: hidden;
-	
+
 }
 /* arreglar esto para que la flecha suba o sacar la flecha */
 .profile span{
@@ -118,14 +116,14 @@ img{
 }
 
 .aside{
-	
+
     margin: 2em;
     margin-right: 0px;
     width: 25%;
     text-align: left;
     float: left;
     outline: 2px solid aquamarine;
-} 
+}
 .fa-search{
 	margin-left:10px;
 	vertical-align: middle;
@@ -151,13 +149,13 @@ img{
 
 	position: relative;
 	list-style: none;
-} 
+}
 /*AQui  termina empiezan las clases de la seccion estudiante*/
 
 /*AQui empiezan las clases de la seccion overview */
 .overview{
 	width: 100%;
-	margin:2em;	
+	margin:2em;
 	text-align: center
 }
 .overview div{
@@ -166,10 +164,10 @@ img{
 	 padding: 1em;
 	 margin: 1em;
 	 float: left;
-	 
+
 }
 .overview span{
-	
+
 	float: left;
 	padding:.5em;
 	text-align: center

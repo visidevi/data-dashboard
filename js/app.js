@@ -4,11 +4,54 @@
 
 // Puedes hacer uso de la base de datos a través de la variable `data`
 console.log(data);
+
 var menu= document.getElementById('subMenu');
 var list = document.getElementById('hide');
+
+
 //llamamos las clases de los items
 menu.addEventListener('click', function() {
 	list.classList.toggle('show')
+
+	var lima = document.getElementById('lima');
+		lima.addEventListener('click', function(e) {
+				var gn = document.getElementById('hideLima')
+					gn.classList.toggle('show')
+			});
+		lima.addEventListener('blur', function(e) {
+				var gn = document.getElementById('hideLima')
+					gn.classList.toggle('show')
+			});
+
+	var arequipa = document.getElementById('arequipa');
+		arequipa.addEventListener('click', function(e) {
+				var gn = document.getElementById('hideArequipa')
+					gn.classList.toggle('show')
+			});
+		arequipa.addEventListener('blur', function(e) {
+				var gn = document.getElementById('hideArequipa')
+					gn.classList.toggle('show')
+			});
+
+	var cdmx = document.getElementById('cdmx');
+		cdmx.addEventListener('click', function(e) {
+				var gn = document.getElementById('hideCDMX')
+					gn.classList.toggle('show')
+			});
+		cdmx.addEventListener('blur', function(e) {
+				var gn = document.getElementById('hideCDMX')
+					gn.classList.toggle('show')
+			});
+
+	var santiago = document.getElementById('santiago');
+	santiago.addEventListener('click', function(e) {
+			var gn = document.getElementById('hideSantiago')
+				gn.classList.toggle('show')
+		});
+	santiago.addEventListener('blur', function(e) {
+			var gn = document.getElementById('hideSantiago')
+				gn.classList.toggle('show')
+		});
 });
 
  function hamburger (){
@@ -20,7 +63,7 @@ menu.addEventListener('click', function() {
 	 buttonclose.setAttribute('aria-hidden',"true");
 
 	 menuhamburger.appendChild(buttonclose);
- 
+
  //FOTO NOMBRE PERFIL
 
 	var profile = document.createElement('div')
@@ -39,14 +82,14 @@ menu.addEventListener('click', function() {
 	 profilearrow.setAttribute('aria-hidden',"true");
 
 	 span.appendChild(profilearrow)
-	 //arreglar la flecha 
+	 //arreglar la flecha
 
 	profile.appendChild(imgprofile);
 	profile.appendChild(profilename);
 	//profilename.appendChild(span)
 
 	menuhamburger.appendChild(profile)
-	
+
 	var ul=document.createElement('ul');
  	var addstudent=document.createElement('li');
  	var removestudent=document.createElement('li');
@@ -57,7 +100,7 @@ menu.addEventListener('click', function() {
  	ul.appendChild(removestudent);
  	ul.appendChild(addsprint);
 
-    
+
 
  	addstudent.textContent = 'Add student';
  	removestudent.textContent = 'Remove student';
