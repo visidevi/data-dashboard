@@ -2,9 +2,9 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
-	font-size: sans-serif;
+}
+body{
 	overflow: hidden;
-  list-style: none;
 }
 
  header nav{
@@ -86,6 +86,7 @@ header section i{
 .hamburger li{
 	padding: 3em;
 	text-transform:uppercase;
+	list-style: none;
 }
 .hamburger .fa {
 	cursor: pointer;
@@ -100,15 +101,79 @@ img{
 	margin-bottom: 0;
 	
 }
+/*AQui empiezan las clases de la seccion estudiante*/
 
 .profile{
 	text-align: center;
 	margin:1em;
 	margin-top :2em;
 	overflow: hidden;
+	
 }
-/*arreglar esto para que la flecha suba o sacar la flecha */
+/* arreglar esto para que la flecha suba o sacar la flecha */
 .profile span{
 	padding:0;
 	margin: 0;
+	vertical-align: middle;
+}
+
+.aside{
+	
+    margin: 2em;
+    margin-right: 0px;
+    width: 25%;
+    text-align: left;
+    float: left;
+    outline: 2px solid aquamarine;
+} 
+.fa-search{
+	margin-left:10px;
+	vertical-align: middle;
+}
+.students{
+	width: 65%;
+    float: right;
+    outline: 2px solid aquamarine;
+    margin:2em;
+    margin-left:0;
+}
+.students input{
+	border: none ;
+	padding:1em;
+	margin-bottom: 1em;
+}
+.students span, .students img  {
+	float: left;
+	padding:.5em;
+	text-align: center
+}
+.see li {
+
+	position: relative;
+	list-style: none;
+} 
+/*AQui  termina empiezan las clases de la seccion estudiante*/
+
+/*AQui empiezan las clases de la seccion overview */
+.overview{
+	width: 100%;
+	margin:2em;	
+	text-align: center
+}
+.overview div{
+	 outline: 2px solid aquamarine;
+	 width: 30%;
+	 padding: 1em;
+	 margin: 1em;
+	 float: left;
+	 
+}
+.overview span{
+	
+	float: left;
+	padding:.5em;
+	text-align: center
+}
+.overview img{
+	width: auto;
 }
