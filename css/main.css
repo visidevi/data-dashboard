@@ -3,28 +3,25 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-size: sans-serif;
-	 overflow: hidden;
+	overflow: hidden;
+  list-style: none;
 }
 
- header{
-  /*width: 100%;
-  height: 4em;*/
+ header nav{
   box-sizing: content-box;
   color: #000;
   position: relative;
 }
-header img{
+header section img{
   margin-left: 40%;
 }
-header i{
+header section i{
   float: right;
   margin-top: 1%;
   margin-right: 3%;
 }
-
 .sedes ul{
 	background-color:#e1e1e1;
-	list-style: none;
 }
 .sedes li{
 	border:3em;
@@ -49,14 +46,19 @@ header i{
 	text-decoration: none;
 	text-transform: uppercase;
 }
-sedes li:hover{
+/*
+.sedes li:hover{
 	background-color:rgba(0,0,0,3);
 	cursor: pointer;
+}*/
+.itemList, .hide2{
+  display: none;
 }
-.hide{
-	display: none;
-
-
+.show, .show2{
+  display: block;
+}
+.subMenu{
+  cursor: pointer;
 }
 .show{
 	display: block;
@@ -70,7 +72,7 @@ sedes li:hover{
 	color:#fff;
 	overflow: hidden;
 	height: 1000px;
-	
+
 }
 .hamburger ul{
 
@@ -78,7 +80,7 @@ sedes li:hover{
 	margin:1em;
 	margin-right: 0;
 	text-align: center;
-	
+
 }
 
 .hamburger li{

@@ -4,7 +4,8 @@
 
 // Puedes hacer uso de la base de datos a través de la variable `data`
 console.log(data);
-var submenu= document.getElementsByClassName('subMenu');
+var menu= document.getElementById('subMenu');
+var list = document.getElementById('hide');
 //llamamos las clases de los items
 
 //iteramos por los elementos
@@ -42,7 +43,7 @@ function showMenu(){
 	 menuhamburger.appendChild(buttonclose);
 
 	var img = document.createElement
-	
+
 
  	ul.appendChild(user);
  	ul.appendChild(addstudent);
@@ -55,9 +56,9 @@ function showMenu(){
  	addsprint.textContent = 'Add Sprint';
 
 console.log(ul);
-	
+
 	menuhamburger.appendChild(ul);
-	
+
 	document.body.appendChild(menuhamburger);
 
 	buttonclose.addEventListener('click',function(){
@@ -65,7 +66,7 @@ console.log(ul);
 		console.log('hola')
 	});
 
-	
+
 
  };
 console.log('hola')
