@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 body{
+
 }
 
  header nav{
@@ -34,7 +35,7 @@ header section i{
 	text-transform: uppercase;
 	display: inline-block;
 }
-.sedes .itemList .sede{
+.sedes .itemList li{
 	display: block;
 	padding: 1em;
 	text-decoration: none;
@@ -90,6 +91,7 @@ label{
 	float: right;
 	margin: 10px 5px 5px ;
 }
+
 img{
 	width: 7em;
 	border:2px solid white;
@@ -172,4 +174,8 @@ img{
 }
 .overview img{
 	width: auto;
+}
+.studies{
+	background-color: orange;
+	color: white;
 }
