@@ -4,7 +4,13 @@
 	box-sizing: border-box;
 }
 body{
-
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.71429;
+    color: #333333;
+}
+.fa {
+	color: #F9A91A;
 }
 
  header nav{
@@ -19,9 +25,10 @@ header section i{
   float: right;
   margin-top: 1%;
   margin-right: 3%;
+  color: #F9A91A;
 }
 .sedes ul{
-	background-color:#e1e1e1;
+	/*background-color:#e1e1e1;*/
 }
 .sedes li{
 	border:3em;
@@ -35,7 +42,7 @@ header section i{
 	text-transform: uppercase;
 	display: inline-block;
 }
-.sedes .itemList li{
+.sedes .itemList .sede{
 	display: block;
 	padding: 1em;
 	text-decoration: none;
@@ -54,14 +61,33 @@ header section i{
 .itemList, .hide{
   display: none;
 }
+
 .show{
   display: inline-block;
 }
 label{
   cursor: pointer;
 }
+/*menu principal*/
+.firstmenu{
+	background-color:#333333;
+	color :white;
+}
+.firstmenu a:hover{
+	color: #F9A91A;
+}
+.firstmenu a:active{ 
+	color: #F9A91A;
+}
+.firstmenu a{
+	text-decoration: none;
+	color :white;
+
+}
+/*fin menu principal*/
+/*menu hamburguesa derecha */
 .hamburger{
-	background-color:#000;
+	background-color:#333333;
 	display: inline-block;
 	position: absolute;
 	top:0px;
@@ -92,12 +118,11 @@ label{
 	margin: 10px 5px 5px ;
 }
 
-img{
+.hamburger img{
 	width: 7em;
-	border:2px solid white;
-	border-radius: 2%;
+	border:5px solid #F9A91A;;
+	border-radius: 100%;
 	margin-bottom: 0;
-
 }
 /*AQui empiezan las clases de la seccion estudiante*/
 
@@ -106,7 +131,6 @@ img{
 	margin:1em;
 	margin-top :2em;
 	overflow: hidden;
-
 }
 /* arreglar esto para que la flecha suba o sacar la flecha */
 .profile span{
@@ -114,7 +138,6 @@ img{
 	margin: 0;
 	vertical-align: middle;
 }
-
 .aside{
 
     margin: 2em;
@@ -179,3 +202,4 @@ img{
 	background-color: orange;
 	color: white;
 }
+

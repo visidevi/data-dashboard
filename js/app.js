@@ -59,8 +59,11 @@ menu.addEventListener('click', function() {
 	imgprofile.setAttribute('src',"assets/images/profilepic.jpg")
 	imgprofile.setAttribute('class', 'img')
 
-	var profilename = document.createElement('h3');
-	profilename.textContent = 'Valentina Smith';
+	var profilename = document.createElement('h4');
+	profilename.textContent = 'VALENTINA SMITH';
+
+	var  tms = document.createElement('p')
+	tms.textContent=' TMs - Santiago de Chile'
 
 	var span = document.createElement('span')
 	var profilearrow = document.createElement('i');
@@ -72,6 +75,7 @@ menu.addEventListener('click', function() {
 
 	profile.appendChild(imgprofile);
 	profile.appendChild(profilename);
+	profile.appendChild(tms)
 	//profilename.appendChild(span)
 
 	menuhamburger.appendChild(profile)

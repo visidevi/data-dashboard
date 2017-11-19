@@ -4,120 +4,118 @@
     <meta charset='utf-8'>
     <title>Data Dashboard</title>
     <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='assets/font-awesome-4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='css/main.css'>
   </head>
-  <link rel='stylesheet' href='assets/font-awesome-4.7.0/css/font-awesome.min.css'>
-  <link rel='stylesheet' href='css/main.css'>
+
   <body>
   <header>
     <section>
-    <img src="assets/images/logo-laboratoria.svg" height="60em">
-    <i class="fa fa-bars fa-2x" id='menu' onclick="hamburger()" aria-hidden="true"></i>
+    <img src='assets/images/logo-laboratoria.svg' height='60em'>
+    <i class='fa fa-bars fa-2x' id='menu' onclick='hamburger()' aria-hidden='true'></i>
     </section>
     <nav class='sedes'>
       <ul>
-        <li class='subMenu' id="subMenu">name<i class='fa fa-arrow-circle-down' aria-hidden='true'></i></li>
+        <li class='subMenu' id='subMenu'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></li>
 
-          <ul class='itemList' id="hide">
+          <ul class='itemList' id='hide'>
 
-            <li><a href=''>Lima</a></li>
-              <ul class="hide2">
-                <li>2016-1</li>
-                <li>2016-2</li>
-                <li>2017-1</li>
-                <li>2017-2</li>
+            <li class="sede"> <input name='sede' id="lima" type='radio'> <label for="lima"> Lima</label></li>
+              <ul class="hide" id='hideLima'>
+                <li> <input name='generation' id="genl62" type='radio'> <label for="genl62"> 2016-2 </label> </li>
+                <li> <input name='generation' id="genl71" type='radio'> <label for="genl71"> 2017-1 </label> </li>
+                <li> <input name='generation' id="genl72" type='radio'> <label for="genl72"> 2017-2 </label> </li>
               </ul>
-            <li><a href=''>Arequipa</a></li>
-              <ul class="hide2">
-                <li>2016-1</li>
-                <li>2016-2</li>
-                <li>2017-1</li>
-                <li>2017-2</li>
+            <li class="sede"> <input name='sede' id="arequipa" type='radio'> <label for="arequipa"> Arequipa </label> </li>
+              <ul class="hide" id='hideArequipa'>
+                <li> <input name='generation' id="gena62" type='radio'> <label for="gena62"> 2016-2 </label> </li>
+                <li> <input name='generation' id="gena71" type='radio'> <label for="gena71"> 2017-1 </label> </li>
               </ul>
-            <li><a href=''>CDMX</a></li>
-              <ul class="hide2">
-                <li>2016-1</li>
-                <li>2016-2</li>
-                <li>2017-1</li>
-                <li>2017-2</li>
+            <li class="sede"> <input name='sede' id="cdmx" type='radio'> <label for="cdmx"> CDMX </label> </li>
+              <ul class="hide" id='hideCDMX'>
+                <li> <input name='generation' id="genc71" type='radio'> <label for="genc71"> 2017-1 </label> </li>
+                <li> <input name='generation' id="genc72" type='radio'> <label for="genc72"> 2017-2 </label> </li>
               </ul>
-            <li><a href=''>Santiago de Chile</a></li>
-              <ul class="hide2">
-                <li>2016-1</li>
-                <li>2016-2</li>
-                <li>2017-1</li>
-                <li>2017-2</li>
+            <li class="sede"> <input name='sede' id="santiago" type='radio'> <label for="santiago"> Santiago de Chile </label> </li>
+              <ul class="hide" id='hideSantiago'>
+                <li> <input name='generation' id="gens62" type='radio'> <label for="gens62"> 2016-2 </label> </li>
+                <li> <input name='generation' id="gens71" type='radio'> <label for="gens71"> 2017-1 </label> </li>
+                <li> <input name='generation' id="gens72" type='radio'> <label for="gens72"> 2017-2 </label> </li>
               </ul>
           </ul>
       </ul>
-      <ul>
-        <li><a href='overview.html'>OVERVIEW</a></li>
-            <li><a href='students.html'>STUDENTS</a></li>
-            <li><a href='index.html'>TEACHERS</a></li>
-      </ul>
+      <!--Menu de Navegacion-->
+   <nav class='firstmenu'>
+              <ul>
+                <li><a href='overview.html'>OVERVIEW</a></li>
+                    <li><a href='students.html'>STUDENTS</a></li>
+                    <li><a href='index.html'>TEACHERS</a></li>
+                    <li><a href='index.html'>assistance</a></li>
+              </ul>
     </nav>
   </header>
-  <div id="myPieChart"></div>
-  <section class='overview'>
-    <div>
-      <h1>enrollment</h1>
-          </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
+    <div id="myPieChart"></div>
+    <section class='overview'>
+      <div>
+        <h1>enrollment</h1>
             </span>
+              <span>
+                <h1>95.6%</h1>
+                <h6>TECH SKILLS</h6>
+              </span>
+              <span>
+                <h1>95.6%</h1>
+                <h6>TECH SKILLS</h6>
+              </span>
             <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
+            <div>
+              <img src="assets/images/bar-graph.png" alt="">
+            </div>
+       </div>
+       <div>
+        <h1>enrollment</h1>
             </span>
-          <span>
-          <div>
-            <img src="assets/images/bar-graph.png" alt="">
-          </div>
-     </div>
-     <div>
-      <h1>enrollment</h1>
-          </span>
+              <span>
+                <h1>95.6%</h1>
+                <h6>TECH SKILLS</h6>
+              </span>
+              <span>
+                <h1>95.6%</h1>
+                <h6>TECH SKILLS</h6>
+              </span>
             <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-          <span>
-          <div>
-            <img src="assets/images/bar-graph.png" alt="">
-          </div>
+            <div>
+              <img src="assets/images/bar-graph.png" alt="">
+            </div>
 
-     </div>
-     <div>
-      <h1>enrollment</h1>
-          </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
+       </div>
+       <div>
+        <h1>enrollment</h1>
             </span>
+              <span>
+                <h1>95.6%</h1>
+                <h6>TECH SKILLS</h6>
+              </span>
+              <span>
+                <h1>95.6%</h1>
+                <h6>TECH SKILLS</h6>
+              </span>
             <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-          <span>
-          <div>
-            <img src="assets/images/bar-graph.png" alt="">
-          </div>
+            <div>
+              <img src="assets/images/bar-graph.png" alt="">
+            </div>
 
-     </div>   
-  </section>
-  <section>
-     <button onclick='pie()'>VISAKA</button>
-  </section>
+       </div>   
+    </section>
+    <section>
+       <button onclick='pie()'>VISAKA</button>
+    </section>
 
-		<!-- Base de datos -->
-		<script src='./js/data.js'></script>
-		<!-- Aquí va tus archivos JS -->
-    <script src='./js/app.js'></script>
-    <script src='chrts.js'></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  		<!-- Base de datos -->
+  		<script src='./js/data.js'></script>
+  		<!-- Aquí va tus archivos JS -->
+      <script src='./js/app.js'></script>
+      <script src='./js/chrts.js'></script>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </body>
 </html>
