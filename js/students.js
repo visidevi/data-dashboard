@@ -77,7 +77,7 @@ for (var i = 0; i < students.length; i++) {
 				var hseTitle = document.createElement('p');
 				techTitle.textContent = 'Teck Skills';
 				hseTitle.textContent = 'Life Skills';
-				//to fixed sirve para 
+				//Math.floor redondea hacia abajo 
 				tech.textContent = Math.floor(techFinal)+ '%';
 				hse.textContent = Math.floor(hseFinal)+ '%';
 				percentagestech.appendChild(tech);
