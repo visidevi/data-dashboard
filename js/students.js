@@ -27,6 +27,25 @@ for (var i = 0; i < students.length; i++) {
 	info.appendChild(namem);
 	profilestudent.appendChild(info)
 
+	var estado = document.createElement('span');
+	info.appendChild(estado)
+	//activa inactiva
+	var activa = document.createElement("p");
+	activa.textContent = "Alumna Activa";
+	activa.style.color = "#007c4d"
+
+	var inactiva = document.createElement("p");
+	inactiva.textContent = "Alumna Inactiva";
+	inactiva.style.color = "#ba0000"
+
+	if (students[i].active == true) {
+		profilestudent.classList.add("student-active");
+		estado.appendChild(activa);
+	}else if (students[i].active == false) {
+		profilestudent.classList.add("student-inactive");
+		estado.appendChild(inactiva);
+	}
+
 
 	}
 }
