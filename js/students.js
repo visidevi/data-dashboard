@@ -96,100 +96,62 @@ for (var i = 0; i < students.length; i++) {
 
 	}
 }
-
-function iactive(){
-	var activeStudent = document.getElementsByClassName('active');
-}
-//div estudiantes*/
 /*
-var students = document.getElementById('students');
-//icono de lupa 
-var icons= document.createElement('i');
-icons.setAttribute('class',"fa fa-search");
-//input
-var input= document.createElement('input');
-input.setAttribute('type','name')
-input.setAttribute('placeholder',"Ingresa el nombre..")
+function cambiaVisibilidad() {
+       var studentts= document.getElementById('studentts');
+       var overview = document.getElementById('overview');
+       var teachers= document.getElementById('teachers');
+       var assistance = document.getElementById('assistance');
+       if(studentts.style.display == 'block'){
+           overview.style.display = 'none';
+           teachers.style.display = 'none';
+           assistance.style.display = 'none';
+           studentts.style.display = 'block';
+       }else if{
+        	overview.style.display = 'block';
+        	teachers.style.display = 'none';
+           assistance.style.display = 'none';
+           studentts.style.display = 'none';
+           overview.style.display = 'block';
+         }
+   }*/
 
-//agregamos el input al seccion students
-students.appendChild(icons);
-students.appendChild(input);
+  var firstmenu= document.getElementById('firstmenu')
+  	console.log(firstmenu)
 
-var article = document.createElement('article')
+   var ul = document.createElement('ul');
 
-//un div para agregar una estudiante
-var profilestudent = document.createElement('div');
-profilestudent.setAttribute('class','studenprofile');
+   firstmenu.appendChild(ul)
 
-//imagen de estudiante
-var imgprofile = document.createElement('img');
-imgprofile.setAttribute('src','http://dummyimage.com/236x238.png/dddddd/000000');
-//nombre de estudiante
-
-var info  = document.createElement('span');
-var namem = document.createElement('h5');
-namem.textContent='nombre del estudiante'
-//especializacion de estudiante
-
-var specializacion = document.createElement('h6')
-specializacion.textContent= 'student specializacion'
-
-info.appendChild(namem);
-info.appendChild(specializacion);
-
-profilestudent.appendChild(imgprofile);
-profilestudent.appendChild(info);
-
-students.appendChild(profilestudent);
-//tag de estudios 
-var studies = document.createElement('span');
-studies.setAttribute('class','studies');
-var span1=document.createElement('button');
-span1.textContent='JAVASCRIPT';
-
-var span2=document.createElement('button');
-span2.textContent='APIs';
-
-var span3=document.createElement('button');
-span3.textContent='JQUERY';
-
-studies.appendChild(span1);
-studies.appendChild(span2);
-studies.appendChild(span3);
-
-students.appendChild(studies);
+   var overview = document.createElement('li');
+   overview.textContent='overview';
 
 
-var percentages = document.createElement('span');
-var percent = document.createElement('h1');
-percent.textContent='95.6%';
-
-var textskills = document.createElement('h6');
-textskills.textContent='text skills';
-percentages.appendChild(percent);
-percentages.appendChild(textskills);
-
-students.appendChild(percentages);
-
-var seeprofile = document.createElement('span');
-seeprofile.textContent = 'See profile'
-var caretrigth = document.createElement('i')
-
-caretrigth.setAttribute('class',"fa fa-caret-right");
-
-seeprofile.appendChild(caretrigth);
-students.appendChild(seeprofile);
-
-/*funciona para estudiantes */
-//
+   var estudents = document.createElement('li');
+   estudents.textContent='students';
+ 
+ 	ul.appendChild(overview);
+ 	ul.appendChild(estudents);
 
 
+ 	/* <nav class='firstmenu' id='firstmenu'>
+              <ul>
+                <li> <button id=''  onclick="cambiaVisibilidad()">OVERVIEW</button></li>
+                <li> <button id='' onclick="cambiaVisibilidad()">STUDENTS</button></li>
+                <li> <button id=''  onclick="cambiaVisibilidad()">TEACHERS</button></li>
+                <li> <button id=''  onclick="cambiaVisibilidad()">assistance</button></li>
+              </ul> 
+    </nav>
+function cambiaVisibilidad() {
+	var studentts= document.getElementById('studentts');
+	studentts.clas
+
+var list = document.getElementById('hide');
 
 
+menu.addEventListener('click', function() {
+	list.classList.toggle('show')
+	
+}*/
 
 
-
-//or (var i = 0; i < data.SCL['2016-2'].students.length; i++) {
-//	console.log(data.SCL['2016-2'].students[i].name);
-//	container.innerHTML += '<p>La estudiante número ' + [i+1] + ' es: ' + data.SCL['2016-2'].students[i].name + '</p>';
-//}

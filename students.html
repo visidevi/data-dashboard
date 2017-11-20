@@ -6,6 +6,7 @@
     <link rel='stylesheet' href='css/main.css'>
     <link rel='stylesheet' href='assets/font-awesome-4.7.0/css/font-awesome.min.css'>
     <link rel='stylesheet' href='css/main.css'>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"> </script>
   </head>
 
   <body>
@@ -45,18 +46,22 @@
           </ul>
       </ul>
       <!--Menu de Navegacion-->
-   <nav class='firstmenu'>
+   <nav class='firstmenu' id='firstmenu'>
               <ul>
-                <li><a href='overview.html'>OVERVIEW</a></li>
-                    <li><a href='students.html'>STUDENTS</a></li>
-                    <li><a href='index.html'>TEACHERS</a></li>
-                    <li><a href='index.html'>assistance</a></li>
-              </ul>
+                <li> <button id=''  onclick="cambiaVisibilidad()">OVERVIEW</button></li>
+                <li> <button id='' onclick="cambiaVisibilidad()">STUDENTS</button></li>
+                <li> <button id=''  onclick="cambiaVisibilidad()">TEACHERS</button></li>
+                <li> <button id=''  onclick="cambiaVisibilidad()">assistance</button></li>
+              </ul> 
     </nav>
   </header>
 
   <!-- especializaciones Maquetado para pasar a JS -->
-  <aside class='aside'>
+  
+
+  <!--seccion estudiantes -->
+  <section  id='studentts'>
+    <aside class='aside'>
     <form method="get" action="" class ='specialization'>
     SPECIALIZATION:
     <br>
@@ -71,58 +76,64 @@
       <br>
     </form>    
   </aside>
+    </section>
 
-  <section  id='students'>
-   </section>
-   <section id='container'></section>
-   <!-- estudiantes Maquetado para pasar a JS 
-   <br>
-   <section>
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <input type="name"  placeholder="Ingresa el nombre.." >
-      <article>
-        <div class=studenprofile>
-          <img src=http://dummyimage.com/236x238.png/dddddd/000000"" alt="">
-          <span>
-              <h1>student name</h1>
-              <h2>student specializacion</h2>
-             <span> 
-                <button>JAVASCRIPT</button>
-                <button>APIs</button>
-                <button>JQUERY</button>
-            </span>
-          </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-          <span>
-            <ul class='see'>
-              <li>see profile <i class="fa fa-caret-right" aria-hidden="true"></i>
-              </li>
-            </ul>
-            
-          </span>
+    <section class='overview' id='overview'>
+      <div>
+          <h1>Total Estudiantes 2017 -II</h1>
+           <span class='valores' >
+                <h1>61</h1>
+                <p># Students currentry enrolled</p>
+                </span>
+                <span class='valoresB'>
+                  <h1>57%</h1>
+                  <p>%Droput</p>
+                </span>       
+      </div>
 
-          
-        </div>
-        
-      </article>  
-  </section> -->
+      <div>
+        <h1>ACHIEVEMENT</h1>
+          <span class='valores' >
+             <h1>61</h1>
+              <p># students that meet the target</p>
+          </span>
+          <span class='valoresB'>
+            <h1>57%</h1>
+              <p>% of total (135)</p>
+          </span>
+          <span>
+         </div>
+         <div>
+          <h1>ASSISTANCE</h1>
+           <span class='valores' >
+              <h1>61</h1>
+              <p># students that meet the target</p>
+            </span>
+            <span class='valoresB'>
+              <h1>57%</h1>
+              <p>% of total (135)</p>
+            </span>
+         </div>
+         <div id='chart_div'></div>
+      </section>
+    </section>
+
+    <section id='teachers' >
+     !AQUI VAN LOS PROFES!
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facere, tempore velit. Voluptatibus distinctio molestiae fugiat, dolores dignissimos animi, corporis esse cupiditate ab porro, aspernatur deleniti! Quae porro repellendus, modi.</p>
+    </section>
+
+    <section id='assistance'>
+     !AQUI VA LA ASISTENCIA
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloribus minus consequatur sapiente voluptas dolor, exercitationem qui ut esse error eius vel, unde earum non reprehenderit sit cumque tenetur aut.</p>
+    </section>
 
 
 		<!-- Base de datos -->
 		<script src='./js/data.js'></script>
 		<!-- Aquí va tus archivos JS -->
     <script src='./js/students.js'></script>
+    <script src='./js/chrts.js'></script>
     <script src='./js/app.js'></script>
   </body>
 </html>
