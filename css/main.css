@@ -7,7 +7,7 @@ body{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.71429;
-    color: #333333; 
+    color: #333333;
 	margin: 0 auto;
 }
 .fa {
@@ -66,9 +66,7 @@ header section i{
 .show{
   display: inline-block;
 }
-label{
-  cursor: pointer;
-}
+
 /*menu principal*/
 .firstmenu{
 	background-color:#333333;
@@ -78,7 +76,7 @@ label{
 	color: #F9A91A;
 	border:none;
 }
-.firstmenu button:active{ 
+.firstmenu button:active{
 	color: #F9A91A;
 	border:none;
 }
@@ -264,4 +262,4 @@ label{
 }
 .hiddendiv{
 	display: none;
-}   
+}
