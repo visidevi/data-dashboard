@@ -38,9 +38,9 @@ for (var i = 0; i < students.length; i++) {
 	inactiva.textContent = "Alumna Inactiva";
 	inactiva.style.color = '#BF4C32';
 
-	var scoreTech = 0;
+	var tech = 0;
 	var maxTech = 1800 * students[i].sprints.length;
-	var scoreHse = 0;
+	var hse = 0;
 	var maxHse = 1200 * students[i].sprints.length;
 
 
@@ -49,12 +49,15 @@ for (var i = 0; i < students.length; i++) {
 		profilestudent.classList.add("active");
 		estado.appendChild(activa);
 
+		//recorer las notas de los sprints
+
 				for(var j=0 ; j < students[i].sprints.length;j++){
-					scoreTech += parseInt(students[i].sprints[j].score.tech);
-					scoreHse += parseInt(students[i].sprints[j].score.hse);
-					// console.log(scoreHse);
-					// console.log(scoreTech);
+					tech += parseInt(students[i].sprints[j].score.tech);
+					hse += parseInt(students[i].sprints[j].score.hse);
+					// console.log(hse);
+					// console.log(tech);
 				}
+				//boton donde van a estar los valores tech, hse
 				var percentageshse = document.createElement('button');
 				percentageshse.classList.add('borange')
 
@@ -64,8 +67,8 @@ for (var i = 0; i < students.length; i++) {
 				profilestudent.appendChild(percentagestech);
 				profilestudent.appendChild(percentageshse);
 
-				var techFinal = scoreTech * 100 / maxTech;
-				var hseFinal = scoreHse * 100 / maxHse;
+				var techFinal = tech * 100 / maxTech;
+				var hseFinal = hse * 100 / maxHse;
 				// console.log(hseFinal);
 				// console.log(techFinal);
 				var tech = document.createElement('h4');
@@ -74,8 +77,9 @@ for (var i = 0; i < students.length; i++) {
 				var hseTitle = document.createElement('p');
 				techTitle.textContent = 'Teck Skills';
 				hseTitle.textContent = 'Life Skills';
-				tech.textContent = techFinal.toFixed(2)+ '%';
-				hse.textContent = hseFinal.toFixed(2)+ '%';
+				//to fixed sirve para 
+				tech.textContent = Math.floor(techFinal)+ '%';
+				hse.textContent = Math.floor(hseFinal)+ '%';
 				percentagestech.appendChild(tech);
 				percentagestech.appendChild(techTitle);
 				percentageshse.appendChild(hse);

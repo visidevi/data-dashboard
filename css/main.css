@@ -155,7 +155,7 @@ label{
 .students{
 	width: 65%;
     float: right;
-   /* outline: 2px solid aquamarine;*/
+    outline: 2px solid aquamarine;
     margin:2em;
     margin-left:0;
 }
