@@ -1,8 +1,8 @@
 var container = document.getElementById('students');
-console.log(container);
+
 
 var students = data.SCL['2017-2'].students;
-console.log(students);
+
 
 
 for (var i = 0; i < students.length; i++) {
