@@ -96,45 +96,55 @@ for (var i = 0; i < students.length; i++) {
 
 	}
 }
+
+function resumen(){
+
+		var overview = document.getElementById('overview');
+       overview.classList.toggle('sectionshow')
+
+	   var students= document.getElementById('students');
+	   students.classList.toggle('sectionhiden')
+       
+       var teachers= document.getElementById('teachers');
+        teachers.classList.toggle('sectionhiden')
+       var assistance = document.getElementById('assistance');
+        assistance.classList.toggle('sectionhiden')
+}
+function estudian(){
+	
+		var students= document.getElementById('students');
+	   students.classList.toggle('sectionhiden')
+       var overview = document.getElementById('overview');
+       overview.classList.toggle('sectionshow')
+       var teachers= document.getElementById('teachers');
+        teachers.classList.toggle('sectionhiden')
+       var assistance = document.getElementById('assistance');
+        assistance.classList.toggle('sectionhiden')
+}
 /*
 function cambiaVisibilidad() {
-       var studentts= document.getElementById('studentts');
+       var students= document.getElementById('students');
        var overview = document.getElementById('overview');
        var teachers= document.getElementById('teachers');
        var assistance = document.getElementById('assistance');
-       if(studentts.style.display == 'block'){
+       if(students.style.display == 'block'){
            overview.style.display = 'none';
            teachers.style.display = 'none';
            assistance.style.display = 'none';
-           studentts.style.display = 'block';
-       }else if{
-        	overview.style.display = 'block';
-        	teachers.style.display = 'none';
-           assistance.style.display = 'none';
-           studentts.style.display = 'none';
-           overview.style.display = 'block';
+           students.style.display = 'block';
+       }else{
+        overview.style.display = 'block';
+           students.style.display = 'block';
          }
-   }*/
+   }
+ var firstmenu = document.getElementById('firstmenu')
 
-  var firstmenu= document.getElementById('firstmenu')
-  	console.log(firstmenu)
-
-   var ul = document.createElement('ul');
-
-   firstmenu.appendChild(ul)
-
-   var overview = document.createElement('li');
-   overview.textContent='overview';
-
-
-   var estudents = document.createElement('li');
-   estudents.textContent='students';
- 
- 	ul.appendChild(overview);
- 	ul.appendChild(estudents);
-
-
- 	/* <nav class='firstmenu' id='firstmenu'>
+ var ul = document.createElement('ul');
+ var overview = document.createElement('li');
+ var estudiantes = document.createElement('li');
+*/
+ /*
+ <nav class='firstmenu'>
               <ul>
                 <li> <button id=''  onclick="cambiaVisibilidad()">OVERVIEW</button></li>
                 <li> <button id='' onclick="cambiaVisibilidad()">STUDENTS</button></li>
@@ -142,16 +152,4 @@ function cambiaVisibilidad() {
                 <li> <button id=''  onclick="cambiaVisibilidad()">assistance</button></li>
               </ul> 
     </nav>
-function cambiaVisibilidad() {
-	var studentts= document.getElementById('studentts');
-	studentts.clas
-
-var list = document.getElementById('hide');
-
-
-menu.addEventListener('click', function() {
-	list.classList.toggle('show')
-	
-}*/
-
-
+*/

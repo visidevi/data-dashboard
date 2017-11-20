@@ -75,15 +75,16 @@ header section i{
 	background-color:#333333;
 	color: white;
 }
-.firstmenu button:hover{
+.firstmenu button:hover, .firstmenu input:hover{
 	color: #F9A91A;
 	border:none;
 }
-.firstmenu button:active{
+.firstmenu button:active, .firstmenu input:active{
+
 	color: #F9A91A;
 	border:none;
 }
-.firstmenu button{
+.firstmenu button, .firstmenu input{
 	text-decoration: none;
 	background-color:#333333;
 	color :white;
@@ -260,9 +261,11 @@ header section i{
 	width: 100px;
 	height:100px;
 }
-.showdiv{
-	display: block;
-}
-.hiddendiv{
+.sectionhiden{
 	display: none;
 }
+
+.sectionshow{
+	display: block;
+}    
+
