@@ -1,138 +1,37 @@
-/*console.log(data)
-var students = data.SCL['2017-2'].students.active;
-var inactivos={};
-var activos={};
+var container = document.getElementById('students');
+console.log(container);
 
-function students(){
-	for (var i = 0 ; i < students.length ; i++) {
+var students = data.SCL['2017-2'].students;
+console.log(students);
 
-	}if(students[i]== false){
-		inactivos++;
-	}else if {
-		activos++;
+
+for (var i = 0; i < students.length; i++) {
+	if(Object.keys(students[i]).name != ""){
+	
+	//un div para agregar una estudiante
+	var profilestudent = document.createElement('div');
+	profilestudent.classList.add('students');
+	container.appendChild(profilestudent)
+
+	//imagen foto de perfil
+	var imgprofile= document.createElement('img')
+	imgprofile.classList.add('profilepic')
+	imgprofile.setAttribute('src', students[i].photo)
+
+	profilestudent.appendChild(imgprofile)
+
+	//nombre 
+	var info  = document.createElement('span');
+	var namem = document.createElement('h5');
+	namem.textContent=(students[i].name);
+	info.appendChild(namem);
+	profilestudent.appendChild(info)
+
+
 	}
-	students();
-}*/
-/*console.log(data);
-
-var menu= document.getElementById('subMenu');
-var list = document.getElementById('hide');
-
-
-//llamamos las clases de los items
-menu.addEventListener('click', function() {
-	list.classList.toggle('show')
-
-	var lima = document.getElementById('lima');
-		lima.addEventListener('click', function(e) {
-				var gn = document.getElementById('hideLima')
-					gn.classList.toggle('show')
-			});
-		lima.addEventListener('blur', function(e) {
-				var gn = document.getElementById('hideLima')
-					gn.classList.toggle('show')
-			});
-
-	var arequipa = document.getElementById('arequipa');
-		arequipa.addEventListener('click', function(e) {
-				var gn = document.getElementById('hideArequipa')
-					gn.classList.toggle('show')
-			});
-		arequipa.addEventListener('blur', function(e) {
-				var gn = document.getElementById('hideArequipa')
-					gn.classList.toggle('show')
-			});
-
-	var cdmx = document.getElementById('cdmx');
-		cdmx.addEventListener('click', function(e) {
-				var gn = document.getElementById('hideCDMX')
-					gn.classList.toggle('show')
-			});
-		cdmx.addEventListener('blur', function(e) {
-				var gn = document.getElementById('hideCDMX')
-					gn.classList.toggle('show')
-			});
-
-	var santiago = document.getElementById('santiago');
-	santiago.addEventListener('click', function(e) {
-			var gn = document.getElementById('hideSantiago')
-				gn.classList.toggle('show')
-		});
-	santiago.addEventListener('blur', function(e) {
-			var gn = document.getElementById('hideSantiago')
-				gn.classList.toggle('show')
-		});
-});
-
- function hamburger (){
- 	var menuhamburger=document.createElement('div');
- 	menuhamburger.setAttribute('class', 'hamburger');
-
- 	 var buttonclose = document.createElement('i')
-	 buttonclose.setAttribute('class','fa fa-times-circle');
-	 buttonclose.setAttribute('aria-hidden',"true");
-
-	 menuhamburger.appendChild(buttonclose);
-
- //FOTO NOMBRE PERFIL
-
-	var profile = document.createElement('div')
-	profile.setAttribute('class', 'profile')
-
-	var imgprofile = document.createElement('img');
-	imgprofile.setAttribute('src',"assets/images/profilepic.jpg")
-	imgprofile.setAttribute('class', 'img')
-
-	var profilename = document.createElement('h3');
-	profilename.textContent = 'Valentina Smith';
-
-	var span = document.createElement('span')
-	var profilearrow = document.createElement('i');
-	 profilearrow.setAttribute('class','fa fa-arrow-circle-down');
-	 profilearrow.setAttribute('aria-hidden',"true");
-
-	 span.appendChild(profilearrow)
-	 //arreglar la flecha
-
-	profile.appendChild(imgprofile);
-	profile.appendChild(profilename);
-	//profilename.appendChild(span)
-
-	menuhamburger.appendChild(profile)
-
-	var ul=document.createElement('ul');
- 	var addstudent=document.createElement('li');
- 	var removestudent=document.createElement('li');
- 	var addsprint=document.createElement('li');
-
-
- 	ul.appendChild(addstudent);
- 	ul.appendChild(removestudent);
- 	ul.appendChild(addsprint);
-
-
-
- 	addstudent.textContent = 'Add student';
- 	removestudent.textContent = 'Remove student';
- 	addsprint.textContent = 'Add Sprint';
-
-console.log(ul);
-
-	menuhamburger.appendChild(ul);
-
-	document.body.appendChild(menuhamburger);
-
-	buttonclose.addEventListener('click',function(){
-		document.body.removeChild(menuhamburger);
-		console.log('hola')
-	});
-
-
-
- };
-console.log('hola')
+}
 //div estudiantes*/
-
+/*
 var students = document.getElementById('students');
 //icono de lupa 
 var icons= document.createElement('i');
@@ -158,11 +57,11 @@ imgprofile.setAttribute('src','http://dummyimage.com/236x238.png/dddddd/000000')
 //nombre de estudiante
 
 var info  = document.createElement('span');
-var namem = document.createElement('h1');
+var namem = document.createElement('h5');
 namem.textContent='nombre del estudiante'
 //especializacion de estudiante
 
-var specializacion = document.createElement('h2')
+var specializacion = document.createElement('h6')
 specializacion.textContent= 'student specializacion'
 
 info.appendChild(namem);
@@ -211,43 +110,16 @@ caretrigth.setAttribute('class',"fa fa-caret-right");
 seeprofile.appendChild(caretrigth);
 students.appendChild(seeprofile);
 
+/*funciona para estudiantes */
+//
 
 
 
 
 
-/*
- <span> 
-                <button>JAVASCRIPT</button>
-                <button>APIs</button>
-                <button>JQUERY</button>
-            </span>
-          </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-            <span>
-              <h1>95.6%</h1>
-              <h6>TECH SKILLS</h6>
-            </span>
-          <span>
-            <ul class='see'>
-              <li>see profile <i class="fa fa-caret-right" aria-hidden="true"></i>
-              </li>
-            </ul>
-            
-          </span>
-
-          
-        </div>
 
 
-
-   */
-
-
+//or (var i = 0; i < data.SCL['2016-2'].students.length; i++) {
+//	console.log(data.SCL['2016-2'].students[i].name);
+//	container.innerHTML += '<p>La estudiante número ' + [i+1] + ' es: ' + data.SCL['2016-2'].students[i].name + '</p>';
+//}

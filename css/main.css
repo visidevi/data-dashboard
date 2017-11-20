@@ -7,7 +7,8 @@ body{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.71429;
-    color: #333333;
+    color: #333333; 
+	margin: 0 auto;
 }
 .fa {
 	color: #F9A91A;
@@ -120,7 +121,7 @@ label{
 
 .hamburger img{
 	width: 7em;
-	border:5px solid #F9A91A;;
+	border:5px solid #F9A91A;
 	border-radius: 100%;
 	margin-bottom: 0;
 }
@@ -173,27 +174,29 @@ label{
 	position: relative;
 	list-style: none;
 }
+.img-student{
+	background-color:red;
+	width: 30px;
+}
 /*AQui  termina empiezan las clases de la seccion estudiante*/
 
 /*AQui empiezan las clases de la seccion overview */
 .overview{
-	width: 100%;
-	margin:2em;
-	text-align: center
+	margin:1em;
+	text-align: center;
+	overflow: hidden;
+	clear:both;
 }
 .overview div{
 	 outline: 2px solid aquamarine;
-	 width: 30%;
-	 padding: 1em;
-	 margin: 1em;
+	 width: 33%;
 	 float: left;
 
 }
 .overview span{
-
 	float: left;
 	padding:.5em;
-	text-align: center
+	text-align: center;
 }
 .overview img{
 	width: auto;
@@ -203,3 +206,43 @@ label{
 	color: white;
 }
 
+.valores{
+	width: 8em;
+	height: 5em;
+	background-color: #F9A91A;
+	text-align:center;
+	text-transform:uppercase;
+	margin:10px;
+	margin-left: 35px;
+}
+.valores p {
+	font-size: 9px;
+}
+
+.valoresB{
+	width: 8em;
+	height: 5em;
+	background-color:#33333333;
+	text-align:center;
+	text-transform:uppercase;
+	margin:10px;
+}
+.valoresB p{
+	font-size: 9px;
+	opacity: 45%;
+}
+/*tabla demoniaca*/
+#chart_div{
+	margin: 0;
+	padding: 0;
+	border:none;
+	margin-left: -30px;
+	margin-top:20px;
+	width: 900px;
+	 height: 300px;
+}
+/*imagenes studiantes perfil*/
+.profilepic{
+	width: 100px;
+	height:100px;
+}

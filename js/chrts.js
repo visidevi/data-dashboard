@@ -1,42 +1,54 @@
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawAnnotations);
 
-var pie = function(){
- google.charts.load('current', {packages: ['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      // Define the chart to be drawn.
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Studens');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['Nitrogen', 0.78],
-        ['Oxygen', 0.21],
-        ['Other', 0.01]
+function drawAnnotations() {
+      var data = google.visualization.arrayToDataTable([
+        ['Sede', 'Students Enrollment', '#Dropout'],
+        ['Santiago de Chile', 61, 35],
+        ['CDMX', 70, 28],
+        ['Lima', 46, 18],
+        ['Arequipa', 20, 9],
+   
       ]);
-       var options = {'title':'How Much Pizza I Ate Last Night',
-                       'width':400,
-                       'height':300};
 
-      // Instantiate and draw the chart.
-      var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
+      var data = google.visualization.arrayToDataTable([
+        ['Sede', 'Students Enrollment', {type: 'string', role: 'annotation'},
+         '#Dropout', {type: 'string', role: 'annotation'}],
+         ['Santiago de Chile', 61,'61 ', 35, '-35' ],
+         ['CDMX', 70,'+100', 28, '-28'],
+         ['Lima', 46, '+46', 18, '-18'],
+        ['Arequipa', 20, '+20', 9, '-9']
+      ]);
+
+      var options = {
+        title: '',
+        chartArea: {width:'50%'},
+        annotations: {
+          alwaysOutside: true,
+          textStyle: {
+            fontSize: 10,
+            auraColor: 'none',
+            color: '#555'
+          },
+          boxStyle: {
+            stroke: '#ccc',
+            strokeWidth: 1,
+            gradient: {
+              color1: '#f3e5f5',
+              color2: '#f3e5f5',
+              x1: '0%', y1: '0%',
+              x2: '10%', y2: '10%'
+            }
+          }
+        },
+        hAxis: {
+          title: 'SEDE',
+          minValue: 0,
+        },
+        vAxis: {
+          title: '#STUDENTS'
+        }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
       chart.draw(data, options);
     }
- }
-
- console.log(data)
-   var students = data.SCL['2017-2'].students[0].active;
-  var inactivos='';
-  var activos='';
-
-function estudiantes(){
-
-  for (var i = 0 ; i < students.length ; i++) {
-
-  }if(students[i] == true){
-    inactivos ++;
-  } else {
-     activos ++;
-  }
-  console.log('hola');
-}
-estudiantes();
