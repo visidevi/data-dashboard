@@ -9,34 +9,127 @@ var menu= document.getElementById('subMenu');
 var list = document.getElementById('hide');
 
 
+var icon = document.createElement('i');
+icon.setAttribute('class', 'fa fa-arrow-circle-down');
+icon.setAttribute('aria-hidden','true');
+menu.appendChild(icon);
+
+
 menu.addEventListener('click', function() {
 	list.classList.toggle('show')
 
 	var lima = document.getElementById('lima');
 	var hL = document.getElementById('hideLima')
-		lima.addEventListener('change', function(e) {
-			hL.classList.toggle('show')
+		lima.addEventListener('click', function(e) {
+			hL.classList = 'show'
+				hA.classList = 'hide'
+				hC.classList = 'hide'
+				hS.classList = 'hide'
+				menu.removeChild(icon);
+				menu.textContent = 'Lima '
+				menu.appendChild(icon);
+		});
+
+		var lima62 = document.getElementById('genl62');
+		lima62.addEventListener('click', function(e) {
+			menu.removeChild(icon);
+			menu.textContent = 'Lima 2016-II'
+			menu.appendChild(icon);
+		});
+		var lima71 = document.getElementById('genl71');
+		lima71.addEventListener('click', function(e) {
+			menu.removeChild(icon);
+			menu.textContent = 'Lima 2017-I'
+			menu.appendChild(icon);
+		});
+		var lima72 = document.getElementById('genl72');
+		lima72.addEventListener('click', function(e) {
+			menu.removeChild(icon);
+			menu.textContent = 'Lima 2017-II'
+			menu.appendChild(icon);
 		});
 
 	var arequipa = document.getElementById('arequipa');
 	var hA = document.getElementById('hideArequipa')
-		arequipa.addEventListener('change', function(e) {
-			hA.classList.toggle('show')
+		arequipa.addEventListener('click', function(e) {
+			hA.classList = 'show'
+				hL.classList = 'hide'
+				hC.classList = 'hide'
+				hS.classList = 'hide'
+
+				menu.removeChild(icon);
+				menu.textContent = 'Arequipa '
+				menu.appendChild(icon);
+		});
+
+		var aqp62 = document.getElementById('gena62');
+		aqp62.addEventListener('click', function(e) {
+			menu.removeChild(icon);
+			menu.textContent = 'Arequipa 2016-II'
+			menu.appendChild(icon);
+		});
+		var aqp71 = document.getElementById('gena71');
+		aqp71.addEventListener('click', function(e) {
+			menu.removeChild(icon);
+			menu.textContent = 'Arequipa 2017-I'
+			menu.appendChild(icon);
 		});
 
 	var cdmx = document.getElementById('cdmx');
 	var hC = document.getElementById('hideCDMX')
-		cdmx.addEventListener('change', function(e) {
-			hC.classList.toggle('show')
+		cdmx.addEventListener('click', function(e) {
+			hC.classList = 'show'
+				hA.classList = 'hide'
+				hL.classList = 'hide'
+				hS.classList = 'hide'
+				menu.removeChild(icon);
+				menu.textContent = 'cdmx '
+				menu.appendChild(icon);
 		});
 
+		var cdmx71 = document.getElementById('genc71');
+		cdmx71.addEventListener('click', function(e) {
+			menu.removeChild(icon);
+			menu.textContent = 'cdmx 2017-I'
+			menu.appendChild(icon);
+		});
+		var cdmx72 = document.getElementById('genc72');
+		cdmx72.addEventListener('click', function(e) {
+			menu.removeChild(icon);
+			menu.textContent = 'cdmx 2017-II'
+			menu.appendChild(icon);
+		});
 	var santiago = document.getElementById('santiago');
 	var hS = document.getElementById('hideSantiago')
-	santiago.addEventListener('change', function(e) {
-		hS.classList.toggle('show')
+	santiago.addEventListener('click', function(e) {
+		hS.classList = 'show'
+			hA.classList = 'hide'
+			hC.classList = 'hide'
+			hL.classList = 'hide'
+			menu.removeChild(icon);
+			menu.textContent = 'Santiago '
+			menu.appendChild(icon);
 	});
 });
 
+var santiago62 = document.getElementById('gens62');
+santiago62.addEventListener('click', function(e) {
+	menu.removeChild(icon);
+	menu.textContent = 'Santiago 2016-II'
+	menu.appendChild(icon);
+});
+var santiago71 = document.getElementById('gens71');
+santiago71.addEventListener('click', function(e) {
+	menu.removeChild(icon);
+	menu.textContent = 'Santiago 2017-I'
+	menu.appendChild(icon);
+});
+var santiago72 = document.getElementById('gens72');
+santiago72.addEventListener('click', function(e) {
+	menu.removeChild(icon);
+	menu.textContent = 'Santiago 2017-II'
+	menu.appendChild(icon);
+});
 
 
 
@@ -111,4 +204,3 @@ console.log(ul);
 
  };
 console.log('hola')
-
