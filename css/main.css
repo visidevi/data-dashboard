@@ -51,7 +51,7 @@ header section i{
 }
 #hideCDMX, #hideLima, #hideArequipa, #hideSantiago{
 	margin-left: 15em;
-	margin-top: -3.1em;
+	margin-top: -6em;
 	position: absolute;
 }
 /*
@@ -66,11 +66,14 @@ header section i{
 .show{
   display: inline-block;
 }
-
 /*menu principal*/
+.firstmenu a{
+	color: white;
+	text-decoration: none;
+}
 .firstmenu{
 	background-color:#333333;
-	color :white;
+	color: white;
 }
 .firstmenu button:hover{
 	color: #F9A91A;
