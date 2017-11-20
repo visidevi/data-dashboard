@@ -32,22 +32,69 @@ for (var i = 0; i < students.length; i++) {
 	//activa inactiva
 	var activa = document.createElement("p");
 	activa.textContent = "Alumna Activa";
-	activa.style.color = "#007c4d"
+	activa.style.color = "#2F9F1F";
 
 	var inactiva = document.createElement("p");
 	inactiva.textContent = "Alumna Inactiva";
-	inactiva.style.color = "#ba0000"
+	inactiva.style.color = '#BF4C32';
+
+	var scoreTech = 0;
+	var maxTech = 1800 * students[i].sprints.length;
+	var scoreHse = 0;
+	var maxHse = 1200 * students[i].sprints.length;
+
+
 
 	if (students[i].active == true) {
-		profilestudent.classList.add("student-active");
+		profilestudent.classList.add("active");
 		estado.appendChild(activa);
-	}else if (students[i].active == false) {
-		profilestudent.classList.add("student-inactive");
+
+				for(var j=0 ; j < students[i].sprints.length;j++){
+					scoreTech += parseInt(students[i].sprints[j].score.tech);
+					scoreHse += parseInt(students[i].sprints[j].score.hse);
+					// console.log(scoreHse);
+					// console.log(scoreTech);
+				}
+				var percentageshse = document.createElement('button');
+				percentageshse.classList.add('borange')
+
+				var percentagestech = document.createElement('button');
+				percentagestech.classList.add('borange')
+
+				profilestudent.appendChild(percentagestech);
+				profilestudent.appendChild(percentageshse);
+
+				var techFinal = scoreTech * 100 / maxTech;
+				var hseFinal = scoreHse * 100 / maxHse;
+				// console.log(hseFinal);
+				// console.log(techFinal);
+				var tech = document.createElement('h4');
+				var hse = document.createElement('h4');
+				var techTitle = document.createElement('p');
+				var hseTitle = document.createElement('p');
+				techTitle.textContent = 'Teck Skills';
+				hseTitle.textContent = 'Life Skills';
+				tech.textContent = techFinal.toFixed(2)+ '%';
+				hse.textContent = hseFinal.toFixed(2)+ '%';
+				percentagestech.appendChild(tech);
+				percentagestech.appendChild(techTitle);
+				percentageshse.appendChild(hse);
+				percentageshse.appendChild(hseTitle);
+
+
+			} else if (students[i].active == false) {
+		profilestudent.classList.add("inactive");
 		estado.appendChild(inactiva);
+		var datanone = document.createElement('p')
+		datanone.textContent='NO REGISTRA DATA'
+		inactiva.appendChild(datanone)
 	}
 
-
 	}
+}
+
+function iactive(){
+	var activeStudent = document.getElementsByClassName('active');
 }
 //div estudiantes*/
 /*

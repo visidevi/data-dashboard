@@ -155,7 +155,7 @@ label{
 .students{
 	width: 65%;
     float: right;
-    outline: 2px solid aquamarine;
+   /* outline: 2px solid aquamarine;*/
     margin:2em;
     margin-left:0;
 }
@@ -168,6 +168,16 @@ label{
 	float: left;
 	padding:.5em;
 	text-align: center
+}
+.borange{
+
+	border:none;
+	background-color: #F9A91A;
+	margin:1em;
+	padding: .5em;
+	border-radius: 2px;
+
+
 }
 .see li {
 
