@@ -100,6 +100,7 @@ header section i{
 	color:#fff;
 	overflow: hidden;
 	height: 1000px;
+	position: fixed;
 
 }
 .hamburger ul{
@@ -159,9 +160,10 @@ header section i{
 .students{
 	width: 65%;
     float: right;
-    outline: 2px solid aquamarine;
+    outline: 1px solid #3333331a;
     margin:2em;
     margin-left:0;
+    background-color:  #3333331a;
 }
 .students input{
 	border: none ;
@@ -267,3 +269,14 @@ header section i{
 .sectionshow{
 	display: block;
 }
+
+
+/*FOOTER*/
+ footer{
+  font-size: 16px;
+  text-align: center;
+  padding :50px;
+  background:#333333;
+  color:#f3f3f5;
+ }
+

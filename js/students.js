@@ -102,6 +102,7 @@ var teachers= document.getElementById('teachers');
 var assistance = document.getElementById('assistance');
 
 function resumen(){
+
 // class="sectionhiden"
 	overview.classList = 'sectionshow overview'
 	students.classList = 'sectionhiden'
@@ -126,6 +127,7 @@ function assistan(){
 	students.classList = 'sectionhiden'
 	teachers.classList = 'sectionhiden'
 	assistance.classList = 'sectionshow'
+
 }
 /*
 function cambiaVisibilidad() {
