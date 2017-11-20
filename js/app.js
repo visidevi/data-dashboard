@@ -204,3 +204,6 @@ console.log(ul);
 
  };
 console.log('hola')
+
+//var footer = document.getElementById('footer')
+//footer.textContent='© 2017 Laboratoria, Data Dashboard';
