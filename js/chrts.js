@@ -8,7 +8,7 @@ function drawAnnotations() {
         ['CDMX', 70, 28],
         ['Lima', 46, 18],
         ['Arequipa', 20, 9],
-   
+
       ]);
 
       var data = google.visualization.arrayToDataTable([
@@ -42,11 +42,10 @@ function drawAnnotations() {
           }
         },
         hAxis: {
-          title: 'SEDE',
           minValue: 0,
         },
         vAxis: {
-          title: '#STUDENTS'
+          title: 'NUMBER STUDENTS'
         }
       };
       var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));

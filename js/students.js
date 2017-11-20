@@ -7,7 +7,7 @@ console.log(students);
 
 for (var i = 0; i < students.length; i++) {
 	if(Object.keys(students[i]).name != ""){
-	
+
 	//un div para agregar una estudiante
 	var profilestudent = document.createElement('div');
 	profilestudent.classList.add('students');
@@ -20,7 +20,7 @@ for (var i = 0; i < students.length; i++) {
 
 	profilestudent.appendChild(imgprofile)
 
-	//nombre 
+	//nombre
 	var info  = document.createElement('span');
 	var namem = document.createElement('h5');
 	namem.textContent=(students[i].name);
@@ -39,9 +39,9 @@ for (var i = 0; i < students.length; i++) {
 	inactiva.style.color = '#BF4C32';
 
 	var tech = 0;
-	var maxTech = 1800 * students[i].sprints.length;
+	var maxTech = 1800 * students[i].sprints.length
 	var hse = 0;
-	var maxHse = 1200 * students[i].sprints.length;
+	var maxHse = 1200 * students[i].sprints.length
 
 
 
@@ -77,7 +77,7 @@ for (var i = 0; i < students.length; i++) {
 				var hseTitle = document.createElement('p');
 				techTitle.textContent = 'Teck Skills';
 				hseTitle.textContent = 'Life Skills';
-				//Math.floor redondea hacia abajo 
+				//Math.floor redondea hacia abajo
 				tech.textContent = Math.floor(techFinal)+ '%';
 				hse.textContent = Math.floor(hseFinal)+ '%';
 				percentagestech.appendChild(tech);
@@ -96,30 +96,36 @@ for (var i = 0; i < students.length; i++) {
 
 	}
 }
+var students= document.getElementById('students');
+var overview = document.getElementById('overview');
+var teachers= document.getElementById('teachers');
+var assistance = document.getElementById('assistance');
 
 function resumen(){
-
-		var overview = document.getElementById('overview');
-       overview.classList.toggle('sectionshow')
-
-	   var students= document.getElementById('students');
-	   students.classList.toggle('sectionhiden')
-       
-       var teachers= document.getElementById('teachers');
-        teachers.classList.toggle('sectionhiden')
-       var assistance = document.getElementById('assistance');
-        assistance.classList.toggle('sectionhiden')
+// class="sectionhiden"
+	overview.classList = 'sectionshow overview'
+	students.classList = 'sectionhiden'
+	teachers.classList = 'sectionhiden'
+	assistance.classList = 'sectionhiden'
 }
 function estudian(){
-	
-		var students= document.getElementById('students');
-	   students.classList.toggle('sectionhiden')
-       var overview = document.getElementById('overview');
-       overview.classList.toggle('sectionshow')
-       var teachers= document.getElementById('teachers');
-        teachers.classList.toggle('sectionhiden')
-       var assistance = document.getElementById('assistance');
-        assistance.classList.toggle('sectionhiden')
+
+	overview.classList = 'sectionhiden'
+	students.classList = 'sectionshow'
+	teachers.classList = 'sectionhiden'
+	assistance.classList = 'sectionhiden'
+}
+function teach(){
+	overview.classList = 'sectionhiden'
+	students.classList = 'sectionhiden'
+	teachers.classList = 'sectionshow'
+	assistance.classList = 'sectionhiden'
+}
+function assistan(){
+	overview.classList = 'sectionhiden'
+	students.classList = 'sectionhiden'
+	teachers.classList = 'sectionhiden'
+	assistance.classList = 'sectionshow'
 }
 /*
 function cambiaVisibilidad() {
@@ -150,6 +156,6 @@ function cambiaVisibilidad() {
                 <li> <button id='' onclick="cambiaVisibilidad()">STUDENTS</button></li>
                 <li> <button id=''  onclick="cambiaVisibilidad()">TEACHERS</button></li>
                 <li> <button id=''  onclick="cambiaVisibilidad()">assistance</button></li>
-              </ul> 
+              </ul>
     </nav>
 */

@@ -5,9 +5,8 @@
 }
 body{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.71429;
-    color: #333333;
+  font-size: .1%;
+  color: #333333;
 	margin: 0 auto;
 }
 .fa {
@@ -231,7 +230,7 @@ header section i{
 	margin-left: 35px;
 }
 .valores p {
-	font-size: 9px;
+	font-size: .9em;
 }
 
 .valoresB{
@@ -243,7 +242,7 @@ header section i{
 	margin:10px;
 }
 .valoresB p{
-	font-size: 9px;
+	font-size: .9em;
 	opacity: 45%;
 }
 /*tabla demoniaca*/
@@ -267,5 +266,4 @@ header section i{
 
 .sectionshow{
 	display: block;
-}    
-
+}

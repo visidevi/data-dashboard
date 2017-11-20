@@ -46,18 +46,86 @@
           </ul>
       </ul>
       <!--Menu de Navegacion-->
-   <nav class='firstmenu'>
-              <ul>
-                <li><a href='overview.html'>OVERVIEW</a></li>
-                    <li><a href='students.html'>STUDENTS</a></li>
-                    <li><a href='index.html'>TEACHERS</a></li>
-                    <li><a href='index.html'>assistance</a></li>
-              </ul>
-    </nav>
-  </header>
+      <nav class='firstmenu' id='firstmenu'>
+                 <ul class='subMenu'>
+                   <li><input type="submit" value='OVERVIEW' onclick="resumen()"></li>
+                   <li><input type="submit" value='STUDENTS' onclick='estudian()'></li>
+                   <li><input type="submit" value='TEACHERS' onclick='teach()'></button></li>
+                   <li><input type="submit" value='ASSISTANCE' onclick='assistan()'></button></li>
+                 </ul>
+
+       </nav>
+     </header>
+       <section class='overview' id="overview">
+         <div>
+           <h1>Total Estudiantes 2017 -II</h1>
+            <span class='valores' >
+                 <h1>61</h1>
+                 <p># Students currentry enrolled</p>
+                 </span>
+                 <span class='valoresB'>
+                   <h1>57%</h1>
+                   <p>%Droput</p>
+                 </span>
+          </div>
+          <div>
+           <h1>ACHIEVEMENT</h1>
+            <span class='valores' >
+                    <h1>61</h1>
+                  <p># students that meet the target</p>
+                 </span>
+                 <span class='valoresB'>
+                   <h1>57%</h1>
+                   <p>% of total (135)</p>
+                 </span>
+               <span>
+          </div>
+          <div>
+           <h1>ASSISTANCE</h1>
+            <span class='valores' >
+                   <h1>61</h1>
+                  <p># students that meet the target</p>
+                 </span>
+                 <span class='valoresB'>
+                   <h1>57%</h1>
+                   <p>% of total (135)</p>
+                 </span>
+               <span>
+          </div>
+        <div id='chart_div'></div>
+        <br>
+      </section>
+
+      <!--seccion estudiantes -->
+      <section  id='students' class="sectionhiden">
+        <aside class='aside'>
+          <form method="get" action="" class ='specialization'>
+            SPECIALIZATION:
+            <br>
+            <input name="" type="checkbox" checked="iactive()" />ACTIVAS
+            <br>
+            <input name="" type="checkbox" checked="" />UX Desing
+            <br>
+            <input name="" type="checkbox" />Front end Desingner
+            <br>
+          </form>
+        </aside>
+      </section>
+
+          <section id='teachers' class='sectionhiden'>
+           !AQUI VAN LOS PROFES!
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facere, tempore velit. Voluptatibus distinctio molestiae fugiat, dolores dignissimos animi, corporis esse cupiditate ab porro, aspernatur deleniti! Quae porro repellendus, modi.</p>
+          </section>
+
+          <section id='assistance' class='sectionhiden'>
+           !AQUI
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloribus minus consequatur sapiente voluptas dolor, exercitationem qui ut esse error eius vel, unde earum non reprehenderit sit cumque tenetur aut.</p>
+          </section>
 		<!-- Base de datos -->
 		<script src='./js/data.js'></script>
 		<!-- Aquí va tus archivos JS -->
     <script src='./js/app.js'></script>
+    <script src='./js/students.js'></script>
+    <script src='./js/chrts.js'></script>
   </body>
 </html>
