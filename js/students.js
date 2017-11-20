@@ -87,13 +87,12 @@ for (var i = 0; i < students.length; i++) {
 
 
 			} else if (students[i].active == false) {
-		profilestudent.classList.add("inactive");
-		estado.appendChild(inactiva);
-		var datanone = document.createElement('p')
-		datanone.textContent='NO REGISTRA DATA'
-		inactiva.appendChild(datanone)
-	}
-
+			profilestudent.classList.add("inactive");
+			estado.appendChild(inactiva);
+			var datanone = document.createElement('p')
+			datanone.textContent='NO REGISTRA DATA'
+			inactiva.appendChild(datanone)
+			}
 	}
 }
 var students= document.getElementById('students');
