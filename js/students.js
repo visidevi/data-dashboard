@@ -39,7 +39,7 @@ for (var i = 0; i < students.length; i++) {
 	inactiva.style.color = '#BF4C32';
 
 	var tech = 0;
-	var maxTech = 1800 * students[i].sprints.length
+	var maxTech = 1600 * students[i].sprints.length
 	var hse = 0;
 	var maxHse = 1200 * students[i].sprints.length
 
