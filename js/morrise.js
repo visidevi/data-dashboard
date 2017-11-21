@@ -1,3 +1,4 @@
+
 new Morris.Bar({
   // ID of the element in which to draw the chart.
   element: 'enrollment',

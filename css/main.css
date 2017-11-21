@@ -276,17 +276,6 @@ header section i{
 	display: block;
 }
 
-#enrollment{
-	margin-top: 1em;
-	margin-left: 1em;
-	position: inherit;
-}
-
-/*.col-md-8 , .col-md-8 div{
-	position: inherit;
-	left: 20%;
-}*/
-
 
 /*FOOTER*/
  footer{
