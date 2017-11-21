@@ -151,7 +151,8 @@ header section i{
     width: 25%;
     text-align: left;
     float: left;
-    outline: 2px solid aquamarine;
+    background-color:  #3333331a;
+    /*outline: 2px solid aquamarine;*/
 }
 .fa-search{
 	margin-left:10px;
