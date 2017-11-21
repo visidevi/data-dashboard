@@ -97,7 +97,8 @@ var students = document.getElementById('students');
 var studentone = document.getElementById('student1');
 var overview = document.getElementById('overview');
 var teachers = document.getElementById('teachers');
-var assistance = document.getElementById('assistance');
+var teachersone = document.getElementById('teachers1');
+var assistance = document.getElementById('chart_div');
 
 function resumen(){
 
@@ -105,6 +106,7 @@ function resumen(){
  overview.classList = 'sectionshow overview'
  students.classList = 'sectionhiden'
  studentone.classList = 'sectionhiden'
+ teachersone.classList = 'sectionhiden'
  teachers.classList = 'sectionhiden'
  assistance.classList = 'sectionhiden'
  container.innerHTML = ""
@@ -115,6 +117,7 @@ function estudian(){
  students.classList = 'sectionshow'
  studentone.classList = 'sectionshow'
  teachers.classList = 'sectionhiden'
+ teachersone.classList = 'sectionhiden'
  assistance.classList = 'sectionhiden'
  students = data.SCL['2017-2'].students;
  addStudents()
@@ -124,6 +127,7 @@ function teach(){
  students.classList = 'sectionhiden'
  studentone.classList = 'sectionhiden'
  teachers.classList = 'sectionshow'
+ teachersone.classList = 'sectionshow'
  assistance.classList = 'sectionhiden'
  container.innerHTML = ""
  jedi = datajedi.SCL.jedi
@@ -134,6 +138,7 @@ function assistan(){
  students.classList = 'sectionhiden'
  studentone.classList = 'sectionhiden'
  teachers.classList = 'sectionhiden'
+ teachersone.classList = 'sectionhiden'
  assistance.classList = 'sectionshow'
  container.innerHTML = ""
 }

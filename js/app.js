@@ -284,3 +284,33 @@ function addTeachers() {
 
 	}
 }
+
+// function onlyTeach(){
+// 	contJedi.innerHTML = ""
+// 	for (var i = 0; i < jedi.length; i++) {
+// 		var profileTeach = document.createElement('div');
+// 			profileJedi.classList.add('teachers');
+// 			contJedi.appendChild(profileJedi)
+//
+// 		//imagen foto de perfil
+// 		var profileimg= document.createElement('img')
+// 			profileimg.classList.add('profilepic')
+// 			profileimg.setAttribute('src', jedi[i].photo)
+//
+// 			profileJedi.appendChild(profileimg)
+//
+// 		//nombre
+// 		var spaName  = document.createElement('span');
+// 		var nameJedi = document.createElement('h5');
+// 			nameJedi.textContent = jedi[i].name
+//
+// 		var cargo = document.createElement('span');
+// 		var nameCargo = document.createElement("p");
+// 			nameCargo.textContent = jedi[i].cargo.Teacher
+//
+// 			cargo.appendChild(nameCargo);
+//
+// 			spaName.appendChild(nameJedi);
+// 			profileJedi.appendChild(spaName)
+// 			spaName.appendChild(cargo)
+// }
