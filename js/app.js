@@ -4,6 +4,7 @@
 
 // Puedes hacer uso de la base de datos a través de la variable `data`
 console.log(data);
+console.log(datajedi);
 
 var menu= document.getElementById('subMenu');
 var list = document.getElementById('hide');
@@ -13,9 +14,15 @@ icon.setAttribute('class', 'fa fa-arrow-circle-down');
 icon.setAttribute('aria-hidden','true');
 menu.appendChild(icon);
 
+/*SECTION STUDENTS*/
 var students = data.SCL['2017-2'].students;
-
 var container = document.getElementById('students');
+
+ /*SECTION Teacher*/
+var contJedi = document.getElementById('teachers');
+var jedi = datajedi.SCL.jedi
+addTeachers()
+
 
 menu.addEventListener('click', function() {
 	list.classList.toggle('show')
@@ -30,6 +37,9 @@ menu.addEventListener('click', function() {
 				menu.removeChild(icon);
 				menu.textContent = 'Lima '
 				menu.appendChild(icon);
+				jedi = datajedi.LIM.jedi
+				contJedi.innerHTML = ""
+				addTeachers()
 		});
 
 		var lima62 = document.getElementById('genl62');
@@ -70,6 +80,9 @@ menu.addEventListener('click', function() {
 				menu.removeChild(icon);
 				menu.textContent = 'Arequipa '
 				menu.appendChild(icon);
+				jedi = datajedi.AQP.jedi
+				contJedi.innerHTML = ""
+				addTeachers()
 		});
 
 		var aqp62 = document.getElementById('gena62');
@@ -102,6 +115,9 @@ menu.addEventListener('click', function() {
 				menu.removeChild(icon);
 				menu.textContent = 'cdmx '
 				menu.appendChild(icon);
+				jedi = datajedi.CDMX.jedi
+				contJedi.innerHTML = ""
+				addTeachers()
 		});
 
 		var cdmx71 = document.getElementById('genc71');
@@ -133,6 +149,9 @@ menu.addEventListener('click', function() {
 			menu.removeChild(icon);
 			menu.textContent = 'Santiago '
 			menu.appendChild(icon);
+			jedi = datajedi.SCL.jedi
+			contJedi.innerHTML = ""
+			addTeachers()
 	});
 });
 
@@ -235,21 +254,33 @@ console.log('hola')
 
 //var footer = document.getElementById('footer')
 //footer.textContent='© 2017 Laboratoria, Data Dashboard';
+function addTeachers() {
+	for (var i = 0; i < jedi.length; i++) {
+		var profileJedi = document.createElement('div');
+			profileJedi.classList.add('teachers');
+			contJedi.appendChild(profileJedi)
 
+		//imagen foto de perfil
+		var profileimg= document.createElement('img')
+			profileimg.classList.add('profilepic')
+			profileimg.setAttribute('src', jedi[i].photo)
 
-var contJedi = document.getElementById('teachers');
+			profileJedi.appendChild(profileimg)
 
-var profileJedi = document.createElement('div');
-contJedi.appendChild(profileJedi)
+		//nombre
+		var spaName  = document.createElement('span');
+		var nameJedi = document.createElement('h5');
+			nameJedi.textContent = jedi[i].name
 
-//imagen foto de perfil
-var profileimg= document.createElement('img')
+		var cargo = document.createElement('span');
+		var nameCargo = document.createElement("p");
+			nameCargo.textContent = jedi[i].cargo;
 
-profileJedi.appendChild(imgprofile)
+			cargo.appendChild(nameCargo);
 
-//nombre
-var spaName  = document.createElement('span');
-var Jedi = document.createElement('h5');
+			spaName.appendChild(nameJedi);
+			profileJedi.appendChild(spaName)
+			spaName.appendChild(cargo)
 
-Jedi.appendChild(spaName);
-profileJedi.appendChild(Jedi)
+	}
+}

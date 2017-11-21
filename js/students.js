@@ -133,6 +133,8 @@ function teach(){
  teachers.classList = 'sectionshow'
  assistance.classList = 'sectionhiden'
  container.innerHTML = ""
+ jedi = datajedi.SCL.jedi
+ addTeachers()
 }
 function assistan(){
  overview.classList = 'sectionhiden'

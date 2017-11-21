@@ -157,7 +157,7 @@ header section i{
 	margin-left:10px;
 	vertical-align: middle;
 }
-.students{
+.students, .teachers{
 	width: 65%;
     float: right;
     outline: 1px solid #3333331a;
@@ -170,7 +170,7 @@ header section i{
 	padding:1em;
 	margin-bottom: 1em;
 }
-.students span, .students img  {
+.students span, .students img  , .teachers span, .teachers img{
 	float: left;
 	padding:.5em;
 	text-align: center
