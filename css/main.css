@@ -228,7 +228,7 @@ header section i{
 	color: white;
 }
 
-.valores{
+.valores, .valoresB{
 	text-align:center;
 	font-size: 11px;
 	text-transform:uppercase;
@@ -242,11 +242,6 @@ header section i{
 	padding: .3em;
 }
 
-.valoresB{
-	text-align:center;
-	text-transform:uppercase;
-	margin:10px;
-}
 .valoresB p{
 	text-transform:uppercase;
 	background-color:#3333;
