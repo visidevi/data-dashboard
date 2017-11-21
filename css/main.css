@@ -198,6 +198,7 @@ header section i{
 
 /*AQui empiezan las clases de la seccion overview */
 .overview{
+	width: 100%;
 	margin:1em;
 	text-align: center;
 	overflow: hidden;
@@ -209,7 +210,9 @@ header section i{
 }
 .overview div{
 	/* outline: 2px solid aquamarine;*/
-	 float: left;
+	height: 25%;
+	float: left;
+	align-content: center;
 }
 .overview span{
 	float: left;
@@ -225,25 +228,29 @@ header section i{
 }
 
 .valores{
-	background-color: #F9A91A;
 	text-align:center;
 	font-size: 11px;
 	text-transform:uppercase;
 	margin:10px;
 	margin-left: 35px;
 }
-.valores p, {
+.valores p {
 	font-size: .9em;
+	text-transform:uppercase;
+	background-color: #F9A91A;
+	padding: .3em;
 }
 
 .valoresB{
-	background-color:#33333333;
 	text-align:center;
 	text-transform:uppercase;
 	margin:10px;
 }
 .valoresB p{
+	text-transform:uppercase;
+	background-color:#3333;
 	font-size: .9em;
+	padding: .3em;
 	opacity: 45%;
 }
 /*tabla demoniaca*/
@@ -274,10 +281,11 @@ header section i{
 	margin-left: 1em;
 	position: inherit;
 }
-.col-md-8 , .col-md-8 div{
+
+/*.col-md-8 , .col-md-8 div{
 	position: inherit;
 	left: 20%;
-}
+}*/
 
 
 /*FOOTER*/
