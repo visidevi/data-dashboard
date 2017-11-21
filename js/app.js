@@ -8,12 +8,14 @@ console.log(data);
 var menu= document.getElementById('subMenu');
 var list = document.getElementById('hide');
 
-
 var icon = document.createElement('i');
 icon.setAttribute('class', 'fa fa-arrow-circle-down');
 icon.setAttribute('aria-hidden','true');
 menu.appendChild(icon);
 
+var students = data.SCL['2017-2'].students;
+
+var container = document.getElementById('students');
 
 menu.addEventListener('click', function() {
 	list.classList.toggle('show')
@@ -35,18 +37,27 @@ menu.addEventListener('click', function() {
 			menu.removeChild(icon);
 			menu.textContent = 'Lima 2016-II'
 			menu.appendChild(icon);
+			students = data.LIM['2016-2'].students
+			container.innerHTML = ""
+			addStudents()
 		});
 		var lima71 = document.getElementById('genl71');
 		lima71.addEventListener('click', function(e) {
 			menu.removeChild(icon);
 			menu.textContent = 'Lima 2017-I'
 			menu.appendChild(icon);
+			students = data.LIM['2017-1'].students
+			container.innerHTML = ""
+			addStudents()
 		});
 		var lima72 = document.getElementById('genl72');
 		lima72.addEventListener('click', function(e) {
 			menu.removeChild(icon);
 			menu.textContent = 'Lima 2017-II'
 			menu.appendChild(icon);
+			students = data.LIM['2017-2'].students
+			container.innerHTML = ""
+			addStudents()
 		});
 
 	var arequipa = document.getElementById('arequipa');
@@ -56,7 +67,6 @@ menu.addEventListener('click', function() {
 				hL.classList = 'hide'
 				hC.classList = 'hide'
 				hS.classList = 'hide'
-
 				menu.removeChild(icon);
 				menu.textContent = 'Arequipa '
 				menu.appendChild(icon);
@@ -67,12 +77,19 @@ menu.addEventListener('click', function() {
 			menu.removeChild(icon);
 			menu.textContent = 'Arequipa 2016-II'
 			menu.appendChild(icon);
+			students = data.AQP['2016-2'].students
+			container.innerHTML = ""
+			addStudents()
+
 		});
 		var aqp71 = document.getElementById('gena71');
 		aqp71.addEventListener('click', function(e) {
 			menu.removeChild(icon);
 			menu.textContent = 'Arequipa 2017-I'
 			menu.appendChild(icon);
+			students = data.AQP['2017-1'].students
+			container.innerHTML = ""
+			addStudents()
 		});
 
 	var cdmx = document.getElementById('cdmx');
@@ -92,12 +109,19 @@ menu.addEventListener('click', function() {
 			menu.removeChild(icon);
 			menu.textContent = 'cdmx 2017-I'
 			menu.appendChild(icon);
+			students = data.CDMX['2017-1'].students
+			container.innerHTML = ""
+			addStudents()
+
 		});
 		var cdmx72 = document.getElementById('genc72');
 		cdmx72.addEventListener('click', function(e) {
 			menu.removeChild(icon);
 			menu.textContent = 'cdmx 2017-II'
 			menu.appendChild(icon);
+			students = data.CDMX['2017-2'].students
+			container.innerHTML = ""
+			addStudents()
 		});
 	var santiago = document.getElementById('santiago');
 	var hS = document.getElementById('hideSantiago')
@@ -117,18 +141,27 @@ santiago62.addEventListener('click', function(e) {
 	menu.removeChild(icon);
 	menu.textContent = 'Santiago 2016-II'
 	menu.appendChild(icon);
+	students = data.SCL['2016-2'].students
+	container.innerHTML = ""
+	addStudents()
 });
 var santiago71 = document.getElementById('gens71');
 santiago71.addEventListener('click', function(e) {
 	menu.removeChild(icon);
 	menu.textContent = 'Santiago 2017-I'
 	menu.appendChild(icon);
+	students = data.SCL['2017-1'].students
+	container.innerHTML = ""
+	addStudents()
 });
 var santiago72 = document.getElementById('gens72');
 santiago72.addEventListener('click', function(e) {
 	menu.removeChild(icon);
 	menu.textContent = 'Santiago 2017-II'
 	menu.appendChild(icon);
+	 students = data.SCL['2017-2'].students
+	 container.innerHTML = ""
+	 addStudents()
 });
 
 
@@ -189,7 +222,6 @@ santiago72.addEventListener('click', function(e) {
  	removestudent.textContent = 'Remove student';
  	addsprint.textContent = 'Add Sprint';
 
-console.log(ul);
 
 	menuhamburger.appendChild(ul);
 
@@ -197,11 +229,7 @@ console.log(ul);
 
 	buttonclose.addEventListener('click',function(){
 		document.body.removeChild(menuhamburger);
-		console.log('hola')
 	});
-
-
-
  };
 console.log('hola')
 
