@@ -210,7 +210,6 @@ header section i{
 .overview div{
 	/* outline: 2px solid aquamarine;*/
 	 float: left;
-
 }
 .overview span{
 	float: left;
@@ -218,7 +217,7 @@ header section i{
 
 }
 .overview img{
-	width: auto;
+	width: 20em;
 }
 .studies{
 	background-color: orange;
@@ -254,10 +253,10 @@ header section i{
 	border:none;
 	margin-left: -30px;
 	margin-top:20px;
-	width: 900px;
-	 height: 300px;
+	width: 100%;
+	height: 300px;
 }
-/*imagenes studiantes perfil*/
+/*imagenes studiantes y teachers perfil*/
 .profilepic{
 	width: 100px;
 	height:100px;
@@ -268,6 +267,16 @@ header section i{
 
 .sectionshow{
 	display: block;
+}
+
+#enrollment{
+	margin-top: 1em;
+	margin-left: 1em;
+	position: inherit;
+}
+.col-md-8 , .col-md-8 div{
+	position: inherit;
+	left: 20%;
 }
 
 
