@@ -235,3 +235,21 @@ console.log('hola')
 
 //var footer = document.getElementById('footer')
 //footer.textContent='© 2017 Laboratoria, Data Dashboard';
+
+
+var contJedi = document.getElementById('teachers');
+
+var profileJedi = document.createElement('div');
+contJedi.appendChild(profileJedi)
+
+//imagen foto de perfil
+var profileimg= document.createElement('img')
+
+profileJedi.appendChild(imgprofile)
+
+//nombre
+var spaName  = document.createElement('span');
+var Jedi = document.createElement('h5');
+
+Jedi.appendChild(spaName);
+profileJedi.appendChild(Jedi)
