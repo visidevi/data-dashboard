@@ -274,9 +274,9 @@ header section i{
 	margin-left: 1em;
 	position: inherit;
 }
-.col-md-8 , .col-md-8 div{
+.col-md-8 {
 	position: inherit;
-	left: 20%;
+	width: 20em;
 }
 
 
