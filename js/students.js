@@ -2,13 +2,6 @@
 
 function addStudents(){
 
-//un div para agregar una estudiante
-var profilestudent = document.createElement('div');
-profilestudent.classList.add('students');
-container.appendChild(profilestudent)
-
-
-
 for (var i = 0; i < students.length; i++) {
  if(Object.keys(students[i]).name != ""){
 
