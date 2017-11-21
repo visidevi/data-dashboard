@@ -203,16 +203,19 @@ header section i{
 	overflow: hidden;
 	clear:both;
 }
+.overview h1{
+	
+
+}
 .overview div{
-	 outline: 2px solid aquamarine;
-	 width: 33%;
+	/* outline: 2px solid aquamarine;*/
 	 float: left;
 
 }
 .overview span{
 	float: left;
 	padding:.5em;
-	text-align: center;
+
 }
 .overview img{
 	width: auto;
@@ -223,21 +226,18 @@ header section i{
 }
 
 .valores{
-	width: 8em;
-	height: 5em;
 	background-color: #F9A91A;
 	text-align:center;
+	font-size: 11px;
 	text-transform:uppercase;
 	margin:10px;
 	margin-left: 35px;
 }
-.valores p {
+.valores p, {
 	font-size: .9em;
 }
 
 .valoresB{
-	width: 8em;
-	height: 5em;
 	background-color:#33333333;
 	text-align:center;
 	text-transform:uppercase;
