@@ -23,6 +23,8 @@ function drawAnnotations() {
 
       var options = {
         title: '',
+        width: 700,
+        height: 540,
         chartArea: {width:'50%'},
         annotations: {
           alwaysOutside: true,

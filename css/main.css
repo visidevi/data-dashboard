@@ -259,10 +259,12 @@ header section i{
 	border:none;
 	margin-top:20px;
 	margin-left: 15%;
-	box-sizing: content-box;
+	position: inherit;
 }
-#chart_div ~ div{
+*#chart_div:only-child{
 	width: 100%;
+	position: inherit;
+
 }
 /*imagenes studiantes y teachers perfil*/
 .profilepic{
