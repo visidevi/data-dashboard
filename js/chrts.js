@@ -37,8 +37,8 @@ function drawAnnotations() {
             stroke: '#ccc',
             strokeWidth: 1,
             gradient: {
-              color1: '#f3e5f5',
-              color2: '#f3e5f5',
+              color1: '#FFC107',
+              color2: '#FFD507',
               x1: '0%', y1: '0%',
               x2: '10%', y2: '10%'
             }

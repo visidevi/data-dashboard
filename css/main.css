@@ -261,11 +261,7 @@ header section i{
 	margin-left: 15%;
 	position: inherit;
 }
-*#chart_div:only-child{
-	width: 100%;
-	position: inherit;
 
-}
 /*imagenes studiantes y teachers perfil*/
 .profilepic{
 	width: 100px;
