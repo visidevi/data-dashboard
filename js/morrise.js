@@ -1,4 +1,3 @@
-
 new Morris.Bar({
   // ID of the element in which to draw the chart.
   element: 'enrollment',
@@ -20,7 +19,6 @@ new Morris.Bar({
   resize: true,
   barColors:['#F9A91A', '#333333']
 });
-
 new Morris.Area({
   element: 'area-example',
   data: [
@@ -34,18 +32,16 @@ new Morris.Area({
   ],
   xkey: 'y',
   ykeys: ['a', 'b'],
-  labels: ['Series A', 'Series B'],
+  labels: ['TECH', 'HSE'],
   resize: true,
   lineColors:['#F9A91A', '#333333']
 });
-
 new Morris.Donut({
   element: 'donut-example',
   data: [
-    {label: "70% Arriba del promedio", value: 105},
-    {label: "30% Por debajo del promedio", value: 35},
+    {label: "% PROMOTERS", value: 75},
+    {label: "% DETRACTORS", value: 25},
   ],
   resize: true,
   colors:['#F9A91A', '#333333']
-
 });
