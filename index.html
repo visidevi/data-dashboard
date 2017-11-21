@@ -62,44 +62,50 @@
        </nav>
      </header>
      <section class='overview' id="overview">
-       <div>
-         <h1>Total Estudiantes 2017 -II</h1>
-          <span class='valores' >
-               <h1>61</h1>
-               <p># Students currentry enrolled</p>
-               </span>
-               <span class='valoresB'>
-                 <h1>57%</h1>
-                 <p>%Droput</p>
-               </span>
-        </div>
-        <div>
-         <h1>ACHIEVEMENT</h1>
-          <span class='valores' >
-                  <h1>61</h1>
-                <p># students that meet the target</p>
-               </span>
-               <span class='valoresB'>
-                 <h1>57%</h1>
-                 <p>% of total (135)</p>
-               </span>
-             <span>
-        </div>
-        <div>
-         <h1>ASSISTANCE</h1>
-          <span class='valores' >
-                 <h1>61</h1>
-                <p># students that meet the target</p>
-               </span>
-               <span class='valoresB'>
-                 <h1>57%</h1>
-                 <p>% of total (135)</p>
-               </span>
-             <span>
-        </div>
-      <div id='chart_div'></div>
-      <br>
-    </section>
+     <div class ='row'></div>
+        <!--BAR -->
+       <div class='col-md-8'>
+         <h3>Estudiantes por Sprint SCL 2017-II</h3>
+         <span class='valores' >
+           <h4>61</h4>
+           <p># Students currentry <br> enrolled</p>
+         </span>
+         <span class='valoresB'>
+             <h4>57%</h4>
+             <p>%Droput</p>
+          </span>
+         <div id="enrollment" ></div>
+     </div>
+            <!--AREA -->
+
+     <div class='col-md-8'>
+       <h3>ACHIEVEMENT</h3>
+         <span class='valores' >
+           <h4>61</h4>
+           <p># students that meet <br> the target</p>
+         </span>
+         <span class='valoresB'>
+           <h4>57%</h4>
+           <p>% of <br>total (135)</p>
+         </span>
+       <div id="area-example" ></div>
+     </div>
+          <!--DONA -->
+     <div class='col-md-8'>
+       <h3>ACHIEVEMENT</h3>
+         <span class='valores' >
+           <h4>61</h4>
+           <p># students that meet <br> the target</p>
+         </span>
+         <span class='valoresB'>
+           <h4>57%</h4>
+           <p>% of <br>total (135)</p>
+         </span>
+        <div id='donut-example'></div>
+     </div>
+      <!--grafica google -->
+     <div id='chart_div'></div>
+  </section>
 
       <!--seccion estudiantes -->
       <section  id='student1' class="sectionhiden">
@@ -129,9 +135,7 @@
     <!--
     <footer id='footer'>
     </footer> -->
-=======
 
->>>>>>> modificacion chorrocio+e
 		<!-- Base de datos -->
 		<script src='./js/data.js'></script>
 		<!-- Aquí va tus archivos JS -->
